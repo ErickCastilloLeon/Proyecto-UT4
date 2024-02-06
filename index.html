@@ -1,100 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>JKanime</title>
-    <link rel="stylesheet" href="css/Header.css">
-    <link rel="stylesheet" href="css/Pagination.css">
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
 
-    /* En terminos de logo...no tenemos logo :`v ..de momento*/
+        #left-container, #right-container {  /* Para mostrar el contedido del script ajustable a la pantalla*/
+            position: absolute;
+            top: 0; /* Por si piemnso agregar un encabesado */
+            height: 100%;
+            width: 50%; /* Para qie ambas partes cubran un 50%*/
+            display: flex; /* Para que las letras */
+            justify-content: center; /* Para que las letras */
+            align-items: center; /* Para que las letras */
+            overflow: hidden; /* Quiza esto sobra */
+            text-align: ;
+        }
 
-    /* Esta parte estarà proximamente en el CSS*/
-    .button-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center; /*Intento alinear el item cuando el click pasa sobre este pero no lo logro..*/
-        width: 100%;
-        max-width: calc(100% - 40px);
-        margin: 0 20px;
-    }
+        #left-container { /* Para que se muestre al lado derecho */
+            left: 0;
+            background-color: white;
+            color: black;
+            transition: background-image 0.5s, filter 0.5s;
+            background-size: 100% auto; /*Ancho adaptado a la pantalla*/
+        }
 
-    /* Apartir de aqui no*/
-    header {
-        position: fixed;
-        top: 0; /* Para evitar que vuele*/
-        left: 0; /* Para el posicionamiento , si no lo pongo esta un tanto a la derecha */
-        width: 100%;
-        background-color: #363636;
-        z-index: 1000; /* Planeo poner multiples cosas en el home , asi que lo ajustare a este nivel de capa ahorrarme tiempo */
-        display: flex; /* Para el display */
-        justify-content: space-between;
-        box-sizing: border-box;
-        padding: 10px;
-    }
-
-    /*Para el futuro , dado que planeo utilizar un poco de javascript , si tuviera mas experiencia en SQL usaria PHP para la organizacion y muestreo de sus datos
-
-
-    .left-container{
-
-    }
-
-    .right-container{
-
-    }
-
-    script{
-
-    }
-     */
-
-    footer {
-        text-align: center;
-        padding: 20px;
-        background-color: #f0f0f0;
-        position: sticky;
-        bottom: 0;
-    }
-</style>
+        #right-container { /* Para que se muestre al lado izquierdo */
+            right: 0;
+            background-color: black;
+            color: white;
+            transition: background-image 0.5s, filter 0.5s, color 0.5s;
+            background-size: 100% auto;
+        }
+        #left-text, #right-text {
+            font-family: "Bell MT", serif;
+            font-size: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra las letras verticalmente */
+        }
+    </style>
 </head>
-
 <body>
-<header>
 
-    <div class="button-container">
-        <div class="button">
-            En proceso
-            <div class="list-container">
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-            </div>
-        </div>
-        <div class="button">
-            HelperkerX  /* No inventigar */
-            <div class="list-container">
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-            </div>
-        </div>
-        <div class="button">
-            En proceso
-            <div class="list-container">
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
-            </div>
-        </div>
-
+<div id="left-container">
+    <div id="left-text">
+        <span>S</span>
+        <span>P</span>
+        <span>A</span>
+        <span>N</span>
+        <span>I</span>
+        <span>S</span>
+        <span>H</span>
+        <span><br></span>
+        <span>M</span>
+        <span>O</span>
+        <span>D</span>
+        <span>E</span>
     </div>
-</header>
+</div>
 
+<div id="right-container">
+    <div id="right-text">
+        <span>E</span>
+        <span>N</span>
+        <span>G</span>
+        <span>L</span>
+        <span>I</span>
+        <span>S</span>
+        <span>H</span>
+        <span><br></span>
+        <span>M</span>
+        <span>O</span>
+        <span>D</span>
+        <span>E</span>
+    </div>
+</div>
 
-<script></script>
-
-<footer>
-
-</footer>
+<script src="/js/Mode_M/Main_Mode.js"></script>
 
 </body>
+</html>
