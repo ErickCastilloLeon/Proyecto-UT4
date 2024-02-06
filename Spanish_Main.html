@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <title>JKanime</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Header.css">
     <link rel="stylesheet" href="css/Pagination.css">
-    <link rel="stylesheet" href="css/body.css">
+  <!--  <link rel="stylesheet" href="css/body.css"> -->
 <style>
 
     /* En terminos de logo...no tenemos logo :`v ..de momento*/
 
-    /* Esta parte estarà proximamente en el CSS*/
+    /* Esta parte estarà proximamente en el CSS , por alguna razon no se muestre asi que lo dejare aqui*/
     body{
         background-image: url("https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif");  /* La imagen lo saque de mi blog */
     }
@@ -28,7 +30,7 @@
         top: 0; /* Para evitar que vuele*/
         left: 0; /* Para el posicionamiento , si no lo pongo esta un tanto a la derecha */
         width: 100%;
-        background-image: url("img/general/background.png");
+        /* background-image: url("img/general/background.png"); */
         z-index: 1000; /* Planeo poner multiples cosas, asi que lo ajustare a este nivel de capa para ahorrarme tiempo */
         display: flex; /* Para el display */
         justify-content: space-between;
@@ -37,10 +39,16 @@
     }
 
     /*Para el futuro , dado que planeo utilizar un poco de javascript , si tuviera mas experiencia en SQL
-    usaria PHP para la organizacion y muestreo de sus datos
+    usaria PHP para la organizacion y muestreo de sus datos */
 
+    .left{
+    }
 
     .left-container{
+
+    }
+
+    .right{
 
     }
 
@@ -51,7 +59,7 @@
     script{
 
     }
-     */
+
 
     footer {
         text-align: center;
@@ -70,32 +78,32 @@
 
     <div class="button-container">
         <div class="button">
-            En proceso
+            Mangas <!-- No crei que funcionaria ponerlo sin etiqueta -->
             <div class="list-container">
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Japones</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Doblaje Latino</a>
             </div>
         </div>
         <div class="button">
-            HelperkerX  /* No inventigar */
+            Principal
             <div class="list-container">
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Redes sociales</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Paginas amigas</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Otros</a>
             </div>
         </div>
         <div class="button">
-            En proceso
+            Anime
             <div class="list-container">
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
-                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Occidental</a> <!-- Solo funcionara en este -->
+                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Doujin</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Doujinshi</a>
             </div>
         </div>
 
     </div>
 </header>
+
 
 <!-- Cada uno de estos tienen un rol especifico , que ayudaran a que el js se muestre correctamente -->
 <div class="overlay"></div>
@@ -107,12 +115,15 @@
 <script src="/js/WindowsPage.js"></script>
 
 
-<!-- Planeo hacerlos interactivos , uno del lado izquierdo y otro del lado
-derecho , podran verse mediante un boton desplegable , dichos divs , contendran lo que serian etiquetas y categorias -->
-<div class="izquierda">
+<!-- Planeo hacerlos interactivos , uno del lado izquierdo y otro del lado derecho , podran verse mediante
+un boton desplegable , dichos divs contendran
+
+lo que serian etiquetas y categorias -->
+
+<div class="right">
 </div>
 
-<div class="derecha">
+<div class="left">
 </div>
 
 <footer>
