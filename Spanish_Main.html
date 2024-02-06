@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JKanime</title>
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Pagination.css">
+    <link rel="stylesheet" href="css/body.css">
+<style>
+
+    /* En terminos de logo...no tenemos logo :`v ..de momento*/
+
+    /* Esta parte estarà proximamente en el CSS*/
+    body{
+        background-image: url("https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif");  /* La imagen lo saque de mi blog */
+    }
+    .button-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /*Intento alinear el item cuando el click pasa sobre este pero no lo logro..*/
+        width: 100%;
+        max-width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+
+    /* Apartir de aqui no*/
+    header {
+        position: fixed;
+        top: 0; /* Para evitar que vuele*/
+        left: 0; /* Para el posicionamiento , si no lo pongo esta un tanto a la derecha */
+        width: 100%;
+        background-image: url("img/general/background.png");
+        z-index: 1000; /* Planeo poner multiples cosas, asi que lo ajustare a este nivel de capa para ahorrarme tiempo */
+        display: flex; /* Para el display */
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    /*Para el futuro , dado que planeo utilizar un poco de javascript , si tuviera mas experiencia en SQL
+    usaria PHP para la organizacion y muestreo de sus datos
+
+
+    .left-container{
+
+    }
+
+    .right-container{
+
+    }
+
+    script{
+
+    }
+     */
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        position: sticky;
+        bottom: 0;
+    }
+
+
+</style>
+</head>
+
+<body>
+<header>
+
+    <div class="button-container">
+        <div class="button">
+            En proceso
+            <div class="list-container">
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+            </div>
+        </div>
+        <div class="button">
+            HelperkerX  /* No inventigar */
+            <div class="list-container">
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+            </div>
+        </div>
+        <div class="button">
+            En proceso
+            <div class="list-container">
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('/js/Spanish_Mode/Contend_Windows.js')">Por que estas aqui?</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<!-- Cada uno de estos tienen un rol especifico , que ayudaran a que el js se muestre correctamente -->
+<div class="overlay"></div>
+
+<div class="image-grid" id="imageGrid"></div>
+
+<div class="pagination" id="pagination"></div>
+
+<script src="/js/WindowsPage.js"></script>
+
+
+<!-- Planeo hacerlos interactivos , uno del lado izquierdo y otro del lado
+derecho , podran verse mediante un boton desplegable , dichos divs , contendran lo que serian etiquetas y categorias -->
+<div class="izquierda">
+</div>
+
+<div class="derecha">
+</div>
+
+<footer>
+    <p>«Copyright 2024 por HelperkerX»</p>
+</footer>
+
+</body>
