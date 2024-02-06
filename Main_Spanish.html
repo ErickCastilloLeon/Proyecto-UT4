@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JKanime</title>
+    <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Pagination.css">
+    <link rel="stylesheet" href="css/body.css">
+<style>
+
+    /* En terminos de logo...no tenemos logo :`v ..de momento*/
+
+    /* Esta parte estarà proximamente en el CSS*/
+    .button-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /*Intento alinear el item cuando el click pasa sobre este pero no lo logro..*/
+        width: 100%;
+        max-width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+
+    /* Apartir de aqui no*/
+    header {
+        position: fixed;
+        top: 0; /* Para evitar que vuele*/
+        left: 0; /* Para el posicionamiento , si no lo pongo esta un tanto a la derecha */
+        width: 100%;
+        background-image: url("img/general/background.png");
+        z-index: 1000; /* Planeo poner multiples cosas, asi que lo ajustare a este nivel de capa para ahorrarme tiempo */
+        display: flex; /* Para el display */
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 10px;
+    }
+
+    /*Para el futuro , dado que planeo utilizar un poco de javascript , si tuviera mas experiencia en SQL usaria PHP para la organizacion y muestreo de sus datos
+
+
+    .left-container{
+
+    }
+
+    .right-container{
+
+    }
+
+    script{
+
+    }
+     */
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f0f0f0;
+        position: sticky;
+        bottom: 0;
+    }
+
+
+</style>
+</head>
+
+<body>
+<header>
+
+    <div class="button-container">
+        <div class="button">
+            En proceso
+            <div class="list-container">
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+            </div>
+        </div>
+        <div class="button">
+            HelperkerX  /* No inventigar */
+            <div class="list-container">
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+            </div>
+        </div>
+        <div class="button">
+            En proceso
+            <div class="list-container">
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+                <a href="#" onclick="cargarScript('En marcha')">Por que estas aqui?</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+
+<script></script>
+
+<footer>
+
+</footer>
+
+</body>
