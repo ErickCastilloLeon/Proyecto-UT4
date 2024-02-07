@@ -11,15 +11,9 @@ const images = [
     { src: "https://www3.animeflv.net/uploads/animes/covers/3862.jpg", alt: "Imagen 9", title: "Ragna Crimson", link: "html2.html" },
     { src: "https://www3.animeflv.net/uploads/animes/covers/3863.jpg", alt: "Imagen 8", title: "Captain Tsubasa", link: "html2.html" },
     { src: "https://www3.animeflv.net/uploads/animes/covers/3865.jpg", alt: "Imagen 7", title: "Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 3", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 2", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 1", title: ":3", link: "html2.html" }, // muchas repeticiones pero me ahorra al tener que editar despues
 ];
 // La cantidad de imágenes que se msotraran por pagina
-const imagesPerPage = 12;
+const imagesPerPage = 8;
 let currentPage = 1;
 
 function showImages() {

@@ -1,25 +1,18 @@
 const images = [
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 1", title: ":3", link: "html2.html" }, // Para que no se quede vacio
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 2", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 3", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 7", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 8", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 9", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 8", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 7", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 3", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 2", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 1", title: ":3", link: "html2.html" }, // muchas repeticiones pero me ahorra al tener que editar despues
+    { src: "https://otakuteca.com/images/books/cover/658c816be83be.webp", alt: "Imagen 1", title: "Jujutsu Kaisen", link: "html2.html" }, // Para que no se quede vacio
+    { src: "https://otakuteca.com/images/books/cover/5bc7cb37a8df5.webp", alt: "Imagen 2", title: "One Piece", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/64cb883e56d87.webp", alt: "Imagen 3", title: "Tensei Shitara Slime Datta Ken", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/5cca10a79a95e.webp", alt: "Imagen 4", title: "Chainsaw Man", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/64cacac18e007.webp", alt: "Imagen 5", title: "Kage no Jitsuryokusha ni Naritakute", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/60dccc7dbac27.webp", alt: "Imagen 5", title: "Mairimashita! Iruma-kun", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/658c7e4b4f0ff.webp", alt: "Imagen 6", title: "Kusuriya no Hitorigoto3", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/61eafd8e45766.webp", alt: "Imagen 7", title: "Vanitas no carte", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/61b75e1112952.webp", alt: "Imagen 8", title: "Boku no Hero Academia", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/60f4daf40dc87.webp", alt: "Imagen 9", title: "Boku no Kokoro no Yabai Yatsu", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/5ca92a3d33898.webp", alt: "Imagen 8", title: "Boku no Hero Academia: School Briefs", link: "html2.html" },
 ];
 // La cantidad de imágenes que se msotraran por pagina
-const imagesPerPage = 12;
+const imagesPerPage = 8;
 let currentPage = 1;
 
 function showImages() {

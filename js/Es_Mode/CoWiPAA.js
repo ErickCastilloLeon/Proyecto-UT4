@@ -3,7 +3,7 @@ const images = [
     { src: "https://tmohentai.com/images/groups/logo/5f5c0cdfe428d.webp", alt: "Imagen 2", title: "NEKOCREME ", link: "html2.html"},
 ];
 // La cantidad de imágenes que se msotraran por pagina
-const imagesPerPage = 12;
+const imagesPerPage = 8;
 let currentPage = 1;
 
 function showImages() {

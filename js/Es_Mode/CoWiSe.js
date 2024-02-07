@@ -1,25 +1,13 @@
 const images = [
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 1", title: ":3", link: "html2.html" }, // Para que no se quede vacio
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 2", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 3", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 7", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 8", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 9", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 8", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 7", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 3", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 2", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 1", title: ":3", link: "html2.html" }, // muchas repeticiones pero me ahorra al tener que editar despues
+    { src: "https://otakuteca.com/images/books/cover/5dba099b268ca.webp", alt: "Imagen 1", title: "Kimi wa Midara na Boku no Joou\n", link: "html2.html" }, // Para que no se quede vacio
+    { src: "https://otakuteca.com/images/books/cover/5dcb9e275c12c.webp", alt: "Imagen 2", title: "Kobayashi-san chi no Maid Dragon: Lucoa wa Boku no XX Desu", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/6238f7cfd9d68.webp", alt: "Imagen 3", title: "Boku no Kawaii Musume wa Futago no Kenja", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/5d2bce7808207.webp", alt: "Imagen 4", title: "Boku no Kanojo wa Kirei ni Warau", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/6576a38f2734f.webp", alt: "Imagen 5", title: "i vida ideal de otro mundo - Reencarnación en un mundo lleno de chicas Nekomimi", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/5bca274c2c5ab.webp", alt: "Imagen 5", title: "Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen", link: "html2.html" },
 ];
 // La cantidad de imágenes que se msotraran por pagina
-const imagesPerPage = 12;
+const imagesPerPage = 8;
 let currentPage = 1;
 
 function showImages() {
