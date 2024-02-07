@@ -47,7 +47,10 @@
     align-items: center;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    background-size: 100% 100%; /* Ajuste dinámico del fondo al tamaño de la imagen */
+
 }
+
 
 .image-overlay h2 {
     margin: 0;
@@ -64,7 +67,7 @@
     padding: 25px;
     z-index: 2;
     max-width: 90%;
-
+    margin: 50px auto 0; /* Agregamos 50px de margen superior */
 }
 
 .pagination {
