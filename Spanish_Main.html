@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
-    <title>JKanime</title>
+    <title>HelperkerX</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Header.css">
+    <link rel="stylesheet" href="css/Footer.css">
     <link rel="stylesheet" href="css/Pagination.css">
   <!--  <link rel="stylesheet" href="css/body.css"> -->
 <style>
@@ -18,7 +19,7 @@
     .button-container {
         display: flex;
         justify-content: space-around;
-        align-items: center; /*Intento alinear el item cuando el click pasa sobre este pero no lo logro..*/
+        align-items: center;
         width: 100%;
         max-width: calc(100% - 40px);
         margin: 0 20px;
@@ -27,7 +28,7 @@
     /* Apartir de aqui no*/
     header {
         position: fixed;
-        top: 0; /* Para evitar que vuele*/
+        /* top: 0; /* Para evitar que vuele */
         left: 0; /* Para el posicionamiento , si no lo pongo esta un tanto a la derecha */
         width: 100%;
         /* background-image: url("img/general/background.png"); */
@@ -57,7 +58,7 @@
 
     footer {
         text-align: center;
-        padding: 20px;
+        padding: 10px;
         background-color: #f0f0f0;
         position: fixed;
         bottom: 0;
@@ -84,9 +85,17 @@
 
     <div class="button-container">
         <div class="button">
+            Serie animada <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            <div class="list-container">
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
+            </div>
+        </div>
+        <div class="button">
             Anime <!-- No crei que funcionaria ponerlo sin etiqueta -->
             <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Japones</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
                 <a href="#" onclick="cargarScript('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
             </div>
         </div>
@@ -99,10 +108,17 @@
             </div>
         </div>
         <div class="button">
-            Mangas
+            Manga
             <div class="list-container">
                 <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSho.js')">Shounen</a>
                 <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSe.js')">Seinen</a>
+            </div>
+        </div>
+        <div class="button">
+            Novela Ligera
+            <div class="list-container">
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSho.js')">Wep novel</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSe.js')">Novela Ligera</a>
             </div>
         </div>
 
@@ -133,7 +149,18 @@ un boton desplegable , dichos divs contendran lo que serian etiquetas y categori
 </div>
 
 <footer>
-    <p>«Copyright 2024 por HelperkerX»</p>
+    <div class="FooLeft">
+        <div><a href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Contacto</a></div>
+    </div>
+
+    <div class="FooCen">
+        <div><p>«Copyright 2024 por HelperkerX»</p></div>
+    </div>
+
+    <div class="FooRight">
+        <div><a href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Soporte</a></div>
+    </div>
+
 </footer>
 
 </body>
