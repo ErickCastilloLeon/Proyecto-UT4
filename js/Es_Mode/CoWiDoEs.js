@@ -1,16 +1,16 @@
 const images = [
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 1", title: ":3", link: "html2.html" }, // Para que no se quede vacio
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 2", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 3", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 7", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 8", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 9", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 8", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 7", title: ":3", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/7.jpg", alt: "Imagen 1", title: "One Piece", link: "html2.html" }, // Para que no se quede vacio
+    { src: "https://www3.animeflv.net/uploads/animes/covers/606.jpg", alt: "Imagen 2", title: "Detective Conan", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3751.jpg", alt: "Imagen 3", title: "High Card", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3762.jpg", alt: "Imagen 4", title: "Hikari no Ou", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3770.jpg", alt: "Imagen 5", title: "Boku no kokoro", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3790.jpg", alt: "Imagen 5", title: "Mashle", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3850.jpg", alt: "Imagen 6", title: "Synduality: Noir", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3859.jpg", alt: "Imagen 7", title: "Sousou no Frieren", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3860.jpg", alt: "Imagen 8", title: "Megumi no Daigo: Kyuukoku no Orange", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3862.jpg", alt: "Imagen 9", title: "Ragna Crimson", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3863.jpg", alt: "Imagen 8", title: "Captain Tsubasa", link: "html2.html" },
+    { src: "https://www3.animeflv.net/uploads/animes/covers/3865.jpg", alt: "Imagen 7", title: "Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su", link: "html2.html" },
     { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
     { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
     { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
@@ -30,7 +30,7 @@ function showImages() {
     imageGrid.innerHTML = '';
 
     // Agregar fondo al cuerpo de la página
-    document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
+    //document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
     document.body.style.backgroundSize = "90% auto"; // 75% de ancho y altura automática
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "center"; // Centrar la imagen

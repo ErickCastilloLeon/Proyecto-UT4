@@ -1,22 +1,6 @@
 const images = [
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 1", title: ":3", link: "html2.html" }, // Para que no se quede vacio
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 2", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 3", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 7", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 8", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 9", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 8", title: ":3", link: "html2.html" },
-    { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 7", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 6", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 5", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 4", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 3", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 2", title: ":3", link: "html2.html" },
-    { src: "https://i.pinimg.com/originals/2b/3f/a3/2b3fa38cd997f90a273736fa4d2115f0.gif", alt: "Imagen 1", title: ":3", link: "html2.html" }, // muchas repeticiones pero me ahorra al tener que editar despues
+    { src: "img/Other/MuslosNoSekai.png", alt: "Imagen 1", title: "Muslos no sekai", link: "html2.html" }, // Para que no se quede vacio
+    { src: "https://tmohentai.com/images/groups/logo/5f5c0cdfe428d.webp", alt: "Imagen 2", title: "NEKOCREME ", link: "html2.html"},
 ];
 // La cantidad de imágenes que se msotraran por pagina
 const imagesPerPage = 12;
@@ -30,7 +14,7 @@ function showImages() {
     imageGrid.innerHTML = '';
 
     // Agregar fondo al cuerpo de la página
-    document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
+   // document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
     document.body.style.backgroundSize = "90% auto"; // 75% de ancho y altura automática
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "center"; // Centrar la imagen

@@ -30,7 +30,7 @@ function showImages() {
     imageGrid.innerHTML = '';
 
     // Agregar fondo al cuerpo de la página
-    document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
+//document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
     document.body.style.backgroundSize = "90% auto"; // 75% de ancho y altura automática
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundPosition = "center"; // Centrar la imagen
