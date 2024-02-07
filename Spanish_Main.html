@@ -38,8 +38,7 @@
         padding: 10px;
     }
 
-    /*Para el futuro , dado que planeo utilizar un poco de javascript , si tuviera mas experiencia en SQL
-    usaria PHP para la organizacion y muestreo de sus datos */
+    /* Para lo de las etiquetas y categorias,  planeo agregarlo */
 
     .left{
     }
@@ -56,11 +55,6 @@
 
     }
 
-    script{
-
-    }
-
-
     footer {
         text-align: center;
         padding: 20px;
@@ -69,35 +63,45 @@
         bottom: 0;
     }
 
-
 </style>
 </head>
 
 <body>
+
+<!-- Audio de fondo ..... por alguna razon se reproduce a los 30-45 segundos -->
+
+<audio id="backgroundAudio" autoplay loop>
+    <source src="Audio/mp3/Chimuelo.mp3" type="audio/mp3">
+</audio>
+<!-- Para que se ejecute el audio -->
+<script>
+    var audio = document.getElementById("backgroundAudio");
+    audio.volume = 0.2;
+</script>
+
 <header>
 
     <div class="button-container">
         <div class="button">
-            Mangas <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            Anime <!-- No crei que funcionaria ponerlo sin etiqueta -->
             <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Japones</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Doblaje Latino</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Japones</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
             </div>
         </div>
         <div class="button">
             Principal
             <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Redes sociales</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Paginas amigas</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Otros</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiReSo.js')">Redes sociales</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiPAA.js')">Paginas amigas</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiO.js')">Otros</a>
             </div>
         </div>
         <div class="button">
-            Anime
+            Mangas
             <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Occidental</a> <!-- Solo funcionara en este -->
-                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Doujin</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/Contend_Windows.js')">Doujinshi</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSho.js')">Shounen</a>
+                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSe.js')">Seinen</a>
             </div>
         </div>
 
@@ -116,9 +120,7 @@
 
 
 <!-- Planeo hacerlos interactivos , uno del lado izquierdo y otro del lado derecho , podran verse mediante
-un boton desplegable , dichos divs contendran
-
-lo que serian etiquetas y categorias -->
+un boton desplegable , dichos divs contendran lo que serian etiquetas y categorias -->
 
 <div class="right">
 </div>
