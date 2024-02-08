@@ -4,65 +4,14 @@
     <title>HelperkerX</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Header.css">
-    <link rel="stylesheet" href="css/Footer.css">
-    <link rel="stylesheet" href="css/Pagination.css">
+    <link rel="stylesheet" href="css/Index/Header.css">
+    <link rel="stylesheet" href="css/Index/Footer.css">
+    <link rel="stylesheet" href="css/Index/Pagination.css">
+    <link rel="stylesheet" href="css/Index/Body.css">
   <!--  <link rel="stylesheet" href="css/body.css"> -->
 <style>
-
-    /* En terminos de logo...no tenemos logo :`v ..de momento*/
-
-    /* Esta parte estarà proximamente en el CSS , por alguna razon no se muestre asi que lo dejare aqui*/
-   /* body{
-        background-image: url("https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif");
-    } */
-    .button-container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        max-width: calc(100% - 40px);
-        margin: 0 20px;
-    }
-
-    /* Apartir de aqui no*/
-    header {
-        position: fixed;
-        /* top: 0; /* Para evitar que vuele */
-        left: 0; /* Para el posicionamiento , si no lo pongo esta un tanto a la derecha */
-        width: 100%;
-        /* background-image: url("img/general/background.png"); */
-        z-index: 1000; /* Planeo poner multiples cosas, asi que lo ajustare a este nivel de capa para ahorrarme tiempo */
-        display: flex; /* Para el display */
-        justify-content: space-between;
-        box-sizing: border-box;
-        padding: 10px;
-    }
-
-    /* Para lo de las etiquetas y categorias,  planeo agregarlo */
-
-    .left{
-    }
-
-    .left-container{
-
-    }
-
-    .right{
-
-    }
-
-    .right-container{
-
-    }
-
-    footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #f0f0f0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
+    body{
+        background-color: #5e5e5e;
     }
 
 </style>
@@ -82,7 +31,6 @@
 </script>
 
 <header>
-
     <div class="button-container">
         <div class="button">
             Serie animada <!-- No crei que funcionaria ponerlo sin etiqueta -->
@@ -121,46 +69,25 @@
                 <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSe.js')">Novela Ligera</a>
             </div>
         </div>
-
     </div>
 </header>
 
-
-<!-- Cada uno de estos tienen un rol especifico , que ayudaran a que el js se muestre correctamente -->
-<div class="overlay"></div>
-
-<div class="image-grid" id="imageGrid"></div>
-
-<div class="pagination" id="pagination"></div>
-
 <div>
-    <script src="/js/WindowsPage.js"></script>
-</div>
+    <!-- Contenedor principal para la imagen y la paginación -->
+    <div class="image-grid" id="imageGrid"></div>
+    <div class="pagination" id="pagination"></div>
 
-
-
-<!-- Planeo hacerlos interactivos , uno del lado izquierdo y otro del lado derecho , podran verse mediante
-un boton desplegable , dichos divs contendran lo que serian etiquetas y categorias -->
-
-<div class="right">
-</div>
-
-<div class="left">
+    <!-- Cada uno de estos tienen un rol especifico , que ayudaran a que el js se muestre correctamente-->
+    <div>
+        <script src="/js/WindowsPage.js"></script>
+    </div>
 </div>
 
 <footer>
-    <div class="FooLeft">
-        <div><a href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Contacto</a></div>
+    <div>
+        <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Contacto</a>
+        <a style="margin: 10%; color: black; text-decoration: none" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">«Copyright 2024 por HelperkerX»</a>
+        <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Soporte</a>
     </div>
-
-    <div class="FooCen">
-        <div><p>«Copyright 2024 por HelperkerX»</p></div>
-    </div>
-
-    <div class="FooRight">
-        <div><a href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Soporte</a></div>
-    </div>
-
 </footer>
-
 </body>

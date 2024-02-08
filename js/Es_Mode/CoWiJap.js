@@ -9,8 +9,6 @@ const images = [
     { src: "https://www3.animeflv.net/uploads/animes/covers/3859.jpg", alt: "Imagen 7", title: "Sousou no Frieren", link: "html2.html" },
     { src: "https://www3.animeflv.net/uploads/animes/covers/3860.jpg", alt: "Imagen 8", title: "Megumi no Daigo: Kyuukoku no Orange", link: "html2.html" },
     { src: "https://www3.animeflv.net/uploads/animes/covers/3862.jpg", alt: "Imagen 9", title: "Ragna Crimson", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3863.jpg", alt: "Imagen 8", title: "Captain Tsubasa", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3865.jpg", alt: "Imagen 7", title: "Shangri-La Frontier: Kusoge Hunter, Kamige ni Idoman to su", link: "html2.html" },
 ];
 // La cantidad de imágenes que se msotraran por pagina
 const imagesPerPage = 8;

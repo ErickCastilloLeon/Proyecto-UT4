@@ -9,10 +9,10 @@ const images = [
     { src: "https://otakuteca.com/images/books/cover/61eafd8e45766.webp", alt: "Imagen 7", title: "Vanitas no carte", link: "html2.html" },
     { src: "https://otakuteca.com/images/books/cover/61b75e1112952.webp", alt: "Imagen 8", title: "Boku no Hero Academia", link: "html2.html" },
     { src: "https://otakuteca.com/images/books/cover/60f4daf40dc87.webp", alt: "Imagen 9", title: "Boku no Kokoro no Yabai Yatsu", link: "html2.html" },
-    { src: "https://otakuteca.com/images/books/cover/5ca92a3d33898.webp", alt: "Imagen 8", title: "Boku no Hero Academia: School Briefs", link: "html2.html" },
+    { src: "https://otakuteca.com/images/books/cover/5ca92a3d33898.webp", alt: "Imagen 10", title: "Boku no Hero Academia: School Briefs", link: "html2.html" },
 ];
 // La cantidad de imágenes que se msotraran por pagina
-const imagesPerPage = 8;
+const imagesPerPage = 9;
 let currentPage = 1;
 
 function showImages() {
