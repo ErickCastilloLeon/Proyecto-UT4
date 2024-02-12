@@ -19,12 +19,11 @@
 .image-container {
     position: relative;
     display: inline-block;
-    margin: 2px;
     height: auto;
     overflow: hidden;
     z-index: 2;
     width: 300px; /* Para la imagen */
-    align-items: center;
+    /* align-items: center; */
 }
 
 /*
@@ -64,11 +63,9 @@
 
 .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 5%;
-    z-index: 2;
-    max-width: 90%;
+    grid-template-columns: repeat(3, 1fr); /* Esto ayudara a la demostracion de las imagenes del JS */
+    gap: 10px; /* Para el espacio entre contenidos */
+    max-width: 100%;
     align-items: center;
 }
 
@@ -86,7 +83,6 @@
     color: #000000;
     border: none;
     border-radius: 5px;
-
 }
 
 

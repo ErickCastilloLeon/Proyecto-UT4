@@ -30,29 +30,29 @@
     audio.volume = 0.2;
 </script>
 
-<header>
+<header style="z-index: 4">
     <div class="button-container">
         <div class="button">
             Serie animada <!-- No crei que funcionaria ponerlo sin etiqueta -->
             <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
+                <a href="#" onclick="CargarSeAJap('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
+                <a href="#" onclick="CargarSeAEn('js/Es_Mode/CoWiEn.js')">Audio Ingles</a>
+                <a href="#" onclick="CargarSeAEs('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
             </div>
         </div>
         <div class="button">
             Anime <!-- No crei que funcionaria ponerlo sin etiqueta -->
             <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
+                <a href="#" onclick="CargarAJap('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
+                <a href="#" onclick="CargarAEs('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
             </div>
         </div>
         <div class="button">
             Principal
             <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiReSo.js')">Redes sociales</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiPAA.js')">Paginas amigas</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiO.js')">Otros</a>
+                <a href="#" onclick="CargarPrinSo('js/Es_Mode/CoWiReSo.js')">Redes sociales</a>
+                <a href="#" onclick="CargarPrinPAA('js/Es_Mode/CoWiPAA.js')">Paginas amigas</a>
+                <a href="#" onclick="CargarPrinScript('js/Es_Mode/CoWiO.js')">Otros</a>
             </div>
         </div>
         <div class="button">
@@ -65,25 +65,26 @@
         <div class="button">
             Novela Ligera
             <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSho.js')">Wep novel</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSe.js')">Novela Ligera</a>
+                <a href="#" onclick="CargarLecWeNo('js/Es_Mode/CoWiSho.js')">Wep novel</a>
+                <a href="#" onclick="CargarLecNoLi('js/Es_Mode/CoWiSe.js')">Novela Ligera</a>
             </div>
         </div>
     </div>
 </header>
 
-<div>
+<div style="padding: 5%; z-index: 1; align-items: center;"> <!-- ... -->
     <!-- Contenedor principal para la imagen y la paginación -->
     <div class="image-grid" id="imageGrid"></div>
     <div class="pagination" id="pagination"></div>
 
     <!-- Cada uno de estos tienen un rol especifico , que ayudaran a que el js se muestre correctamente-->
     <div>
-        <script src="/js/WindowsPage.js"></script>
+        <script src="/js/Lectura.js"></script>
+        <script src="/js/CargarLecNoLi.js"></script>
     </div>
 </div>
 
-<footer>
+<footer style="z-index: 5">
     <div>
         <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Contacto</a>
         <a style="margin: 10%; color: black; text-decoration: none" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">«Copyright 2024 por HelperkerX»</a>
