@@ -2,6 +2,7 @@
 <html lang="es" xmlns="http://www.w3.org/1999/html">
 <head>
     <title>HelperkerX</title>
+    <link rel="icon" href="/img/General/IconLog.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/Index/Header.css">
@@ -13,7 +14,6 @@
     body{
         background-color: #5e5e5e;
     }
-
 </style>
 </head>
 
@@ -33,51 +33,38 @@
 <header style="z-index: 4">
     <div class="button-container">
         <div class="button">
-            Serie animada <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            Contenidos <!-- No crei que funcionaria ponerlo sin etiqueta -->
             <div class="list-container">
-                <a href="#" onclick="CargarSeAJap('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
-                <a href="#" onclick="CargarSeAEn('js/Es_Mode/CoWiEn.js')">Audio Ingles</a>
-                <a href="#" onclick="CargarSeAEs('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
+                <a href="#" onclick="CargarAnime('js/Es_Mode/CoWiAnime.js')">Anime</a>
+                <a href="#" onclick="CargarManga('js/Es_Mode/CoWiManga.js')">Manga</a>
+                <a href="#" onclick="CargarManhwa('js/Es_Mode/CoWiManhwa.js')">Manhwa</a>
             </div>
         </div>
         <div class="button">
-            Anime <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            <img src="/img/General/Logo.png" width="100px" height=auto > <!-- No crei que funcionaria ponerlo sin etiqueta -->
             <div class="list-container">
-                <a href="#" onclick="CargarAJap('js/Es_Mode/CoWiJap.js')">Audio Japones</a>
-                <a href="#" onclick="CargarAEs('js/Es_Mode/CoWiDoEs.js')">Doblaje Español</a>
+                <a href="#" onclick="CargarAJap('js/Es_Mode/CoWiJap.js')">English Mode</a>
             </div>
         </div>
         <div class="button">
-            Principal
+            Cualquiera
             <div class="list-container">
+                <a href="#" onclick="CargarAJap('js/Es_Mode/CoWiJap.js')">Paginas Amigas</a>
                 <a href="#" onclick="CargarPrinSo('js/Es_Mode/CoWiReSo.js')">Redes sociales</a>
-                <a href="#" onclick="CargarPrinPAA('js/Es_Mode/CoWiPAA.js')">Paginas amigas</a>
                 <a href="#" onclick="CargarPrinScript('js/Es_Mode/CoWiO.js')">Otros</a>
             </div>
         </div>
-        <div class="button">
-            Manga
-            <div class="list-container">
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSho.js')">Shounen</a>
-                <a href="#" onclick="cargarScript('js/Es_Mode/CoWiSe.js')">Seinen</a>
-            </div>
-        </div>
-        <div class="button">
-            Novela Ligera
-            <div class="list-container">
-                <a href="#" onclick="CargarLecWeNo('js/Es_Mode/CoWiSho.js')">Wep novel</a>
-                <a href="#" onclick="CargarLecNoLi('js/Es_Mode/CoWiSe.js')">Novela Ligera</a>
-            </div>
         </div>
     </div>
 </header>
 
-<div style="padding: 5%; z-index: 1; align-items: center;"> <!-- ... -->
+los dioses olimpicos , son varios , desde griegos , atlanticos , egiptos, nordicos y chinos
+
+<div style="padding: 5%; z-index: 1; align-items: cen"> <!-- ... -->
     <!-- Contenedor principal para la imagen y la paginación -->
     <div class="image-grid" id="imageGrid"></div>
     <div class="pagination" id="pagination"></div>
 
-    <!-- Cada uno de estos tienen un rol especifico , que ayudaran a que el js se muestre correctamente-->
     <div>
         <script src="/js/LoaderEX.js"></script>
     </div>
@@ -86,7 +73,7 @@
 <footer style="z-index: 5">
     <div>
         <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Contacto</a>
-        <a style="margin: 10%; color: black; text-decoration: none" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">«Copyright 2024 por HelperkerX»</a>
+        <a style="margin: 10%; color: black; text-decoration: none" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">«Copyright 2024 por HelperkerX»</a> <!-- Es mi usuario de twitter -->
         <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Soporte</a>
     </div>
 </footer>
