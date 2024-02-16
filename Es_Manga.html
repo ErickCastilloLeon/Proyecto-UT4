@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>HelperkerX</title>
+    <link rel="icon" href="/img/General/IconLog.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Es_Mode/Header.css">
+    <link rel="stylesheet" href="css/Es_Mode/Footer.css">
+    <link rel="stylesheet" href="css/Es_Mode/Pagination.css">
+    <link rel="stylesheet" href="css/Es_Mode/Body.css">
+  <!--  <link rel="stylesheet" href="css/body.css"> -->
+</head>
+
+<body>
+<!-- ---------------------------------------------------------------------------------- -->
+<header style="z-index: 4">
+    <div class="button-container">
+        <div class="button">
+            Contenidos <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            <div class="list-container">
+               <!--  <a href="#" onclick="CargarAnime('js/Es_Mode/CoWiAnime.js')">Anime</a>
+                <a href="#" onclick="CargarManga('js/Es_Mode/CoWiManga.js')">Manga</a>
+                <a href="#" onclick="CargarManhwa('js/Es_Mode/CoWiManhwa.js')">Manhwa</a>
+                <a href="#" onclick="ReLoad('/js/Es_Mode/CoWiAnime.js')">Anime</a>
+                <a href="#" onclick="ReLoad('/js/Es_Mode/CoWiManga.js')">Manga</a>
+                <a href="#" onclick="ReLoad('/js/Es_Mode/CoWiManhwa.js')">Manhwa</a>-->
+                <a href="Es_Anime.html">Animne</a>
+                <a href="Es_Manga.html">Manga</a>
+                <a href="Es_Manhwa.html">Manhwa</a>
+            </div>
+        </div>
+        <div class="button">
+            <img src="/img/General/Logo.png" width="100px" height=auto > <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            <div class="list-container">
+                <a href="En_Mode.html">English Mode</a>
+            </div>
+        </div>
+        <div class="button">
+            Otros
+            <div class="list-container">
+                <a href="Es_PAA.html">Paginas Amigas</a>
+                <a href="Es_ReSo.html">Redes sociales</a>
+                <a href="Es_Otros.html">Otros</a>
+            </div>
+        </div>
+        </div>
+</header>
+<!-- ---------------------------------------------------------------------------------- -->
+<div style="position: absolute;     transform: translate(5%); top: 7%;" id="left-container"> <!-- ... -->
+    <!-- Contenedor principal para la imagen y la paginación -->
+    <div class="image-grid" id="imageGrid"></div>
+    <div class="pagination" id="pagination"></div>
+        <script src="/js/Es_Mode/Contenido/CoWiManga.js"></script>
+</div>
+<div id="right-container">
+    <div>
+        <h2>Tags</h2>
+        <!-- Planeo cambiarlos a enlaces ,pero de momento los dejare asi -->
+        <ul>
+            <li>Acción</li>
+            <li>Aventura</li>
+            <li>Comedia</li>
+            <li>Drama</li>
+            <li>Fantasía</li>
+            <li>Magia</li>
+            <li>Mecha</li>
+            <li>Misterio</li>
+            <li>Psicológico</li>
+            <li>Recuentos de la vida</li>
+            <li>Romance</li>
+            <li>Sci-Fi</li>
+            <li>Slice of Life</li>
+            <li>Sobrenatural</li>
+            <li>Superpoderes</li>
+            <li>Terror</li>
+            <li>Ecchi</li>
+            <li>Harem</li>
+            <li>Shoujo</li>
+            <li>Shounen</li>
+            <li>Samurai</li>
+            <li>Artes Marciales</li>
+            <li>Deportes</li>
+            <li>Espacial</li>
+            <li>Militar</li>
+            <li>Escolar</li>
+            <li>Magical Girl</li>
+            <li>Historico</li>
+            <li>Parodia</li>
+            <li>Seinen</li>
+            <li>Josei</li>
+            <li>Idol</li>
+            <li>Música</li>
+            <li>Cyberpunk</li>
+            <li>Demonios</li>
+            <li>Vampiros</li>
+            <li>Fantasmas</li>
+            <li>Robots</li>
+            <li>Aliens</li>
+        </ul>
+    </div>
+</div>
+</body>
+
+<footer>
+    <div>
+        <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Contacto</a>
+        <a style="margin: 10%; color: black; text-decoration: none" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">«Copyright 2024 por HelperkerX»</a> <!-- Es mi usuario de twitter -->
+        <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Soporte</a>
+    </div>
+</footer>
+</html>

@@ -1,0 +1,29 @@
+
+#left-container, #right-container {
+}
+
+#left-container {
+        top: 7%;
+        position: absolute;
+        width: 70%;
+        left: 0;
+}
+#right-container {
+        top: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        overflow-y: auto;
+        height: 100%;
+        justify-content: center;
+        text-align: center;
+        position: fixed;
+        width: 30%;
+        right: 0;
+}
+
+/* Ocultar la barra de desplazamiento en navegadores webkit */
+#right-container::-webkit-scrollbar { /* Sacado de w3schol .. Hide Scrollbar*/
+        width: 0;  /* Oculta la barra de desplazamiento vertical */
+}

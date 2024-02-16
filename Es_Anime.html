@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>HelperkerX</title>
+    <link rel="icon" href="/img/General/IconLog.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Es_Mode/Header.css">
+    <link rel="stylesheet" href="css/Es_Mode/Footer.css">
+    <link rel="stylesheet" href="css/Es_Mode/Pagination.css">
+    <link rel="stylesheet" href="css/Es_Mode/Body.css">
+<style>
+    body{
+        background-color: #5e5e5e;
+    }
+</style>
+</head>
+
+<body>
+<!-- ---------------------------------------------------------------------------------- -->
+<header style="z-index: 4">
+    <div class="button-container">
+        <div class="button">
+            Contenidos <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            <div class="list-container">
+               <!--  <a href="#" onclick="CargarAnime('js/Es_Mode/CoWiAnime.js')">Anime</a>
+                <a href="#" onclick="CargarManga('js/Es_Mode/CoWiManga.js')">Manga</a>
+                <a href="#" onclick="CargarManhwa('js/Es_Mode/CoWiManhwa.js')">Manhwa</a>
+                <a href="#" onclick="ReLoad('/js/Es_Mode/CoWiAnime.js')">Anime</a>
+                <a href="#" onclick="ReLoad('/js/Es_Mode/CoWiManga.js')">Manga</a>
+                <a href="#" onclick="ReLoad('/js/Es_Mode/CoWiManhwa.js')">Manhwa</a>-->
+                <a href="Es_Anime.html">Animne</a>
+                <a href="Es_Manga.html">Manga</a>
+                <a href="Es_Manhwa.html">Manhwa</a>
+            </div>
+        </div>
+        <div class="button">
+            <img src="/img/General/Logo.png" width="100px" height=auto > <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            <div class="list-container">
+                <a href="En_Mode.html">English Mode</a>
+            </div>
+        </div>
+        <div class="button">
+            Cualquiera
+            <div class="list-container">
+                <a href="Es_PAA.html">Paginas Amigas</a>
+                <a href="Es_ReSo.html">Redes sociales</a>
+                <a href="Es_Otros.html">Otros</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</header>
+<!-- ---------------------------------------------------------------------------------- -->
+<div id="left-container"> <!-- ... -->
+    <!-- Contenedor principal para la imagen y la paginación -->
+    <div class="image-grid" id="imageGrid"></div>
+    <div class="pagination" id="pagination"></div>
+    <script src="/js/Es_Mode/Contenido/CoWiAnime.js"></script>
+</div>
+<div style="position: fixed" id="right-container">
+    <div id="tags">
+        <h2>Tags</h2>
+        <ul>
+            <!-- Lista de tags -->
+            <li>---------------------</li>
+            <li>---------------------</li>
+            <li>---------------------</li>
+            <!-- Añadir más tags según sea necesario -->
+        </ul>
+    </div>
+    <div id="Populares">
+        <h2>Populares</h2>
+        <ul>
+            <!-- Lista de elementos más populares -->
+            <li>---------------------</li>
+            <li>Popular 2</li>
+            <li>Popular 3</li>
+            <!-- Añadir más elementos populares según sea necesario -->
+        </ul>
+    </div>
+</div>
+
+</body>
+
+<footer style="z-index: 5">
+    <div>
+        <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Contacto</a>
+        <a style="margin: 10%; color: black; text-decoration: none" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">«Copyright 2024 por HelperkerX»</a> <!-- Es mi usuario de twitter -->
+        <a style="margin: 10%;" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Soporte</a>
+    </div>
+</footer>
+</html>
