@@ -12,7 +12,7 @@ document.getElementById('left-container').addEventListener('mouseleave', functio
 });
 
 document.getElementById('left-container').addEventListener('click', function() {
-    window.location.href = 'Es_Anime.html';
+    window.location.href = 'En_Mode/En_Mode.html';
 });
 
 // Event listener for the right container
@@ -29,5 +29,5 @@ document.getElementById('right-container').addEventListener('mouseleave', functi
 });
 
 document.getElementById('right-container').addEventListener('click', function() {
-    window.location.href = 'Es_Anime.html';
+    window.location.href = 'Es_Mode/Es_Mode.html';
 });

@@ -1,8 +1,4 @@
-
-
-// Array de objetos que contiene información sobre imágenes
 const images = [
-    // Cada objeto contiene src (fuente), alt (texto alternativo), title (título) y link (enlace)
     { src: "/img/Contend/Manga/01010001.webp", alt: "Jujutsu Kaisen", title: "Jujutsu Kaisen", link: "html2.html" }, // Para que no se quede vacio
     { src: "/img/Contend/Manga/01010002.webp", alt: "One Piece", title: "One Piece", link: "html2.html" },
     { src: "/img/Contend/Manga/01010003.webp", alt: "Imagen 1", title: "Tensei Shitara Slime Datta Ken", link: "html2.html" },
@@ -21,83 +17,68 @@ const images = [
     { src: "/img/Contend/Manga/02010005.webp", alt: "Imagen 15", title: "i vida ideal de otro mundo - Reencarnación en un mundo lleno de chicas Nekomimi", link: "html2.html" },
     { src: "/img/Contend/Manga/02010006.webp", alt: "Imagen 16", title: "Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen", link: "html2.html" },
 ];
-// Número de imágenes que se mostrarán por página
+// La cantidad de imágenes que se msotraran por pagina
 const imagesPerPage = 9;
-
-// Página actual que se está mostrando
 let currentPage = 1;
 
-// Función para mostrar las imágenes en la página actual
 function showImages() {
     const start = (currentPage - 1) * imagesPerPage;
     const end = start + imagesPerPage;
 
-    // Obtiene el contenedor de imágenes en el HTML
     const imageGrid = document.getElementById("imageGrid");
     imageGrid.innerHTML = '';
 
-    // Itera sobre las imágenes para mostrarlas en la página
+    // Agregar fondo al cuerpo de la página
+    //document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
+    document.body.style.backgroundSize = "90% auto"; // 75% de ancho y altura automática
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center"; // Centrar la imagen
+
+    // Iterar sobre las imágenes para mostrarlas en la página , cierta parte del codigo me base en el codigo de TMO
     for (let i = start; i < end && i < images.length; i++) {
         const image = images[i];
 
-        // Crea un contenedor para la imagen
         const imageContainer = document.createElement("div");
         imageContainer.className = "image-container";
 
-
-        // Crea un elemento de imagen
         const imgElement = document.createElement("img");
         imgElement.src = image.src;
         imgElement.alt = image.alt;
 
-        // Crea un overlay para mostrar el título al pasar el cursor
-        const overlay = document.createElement("div");
+        const overlay = document.createElement("div"); // Para cuando el cursor pase se muestre el titulo
         overlay.className = "image-overlay";
         overlay.innerHTML = `<h2 class="centered-text">${image.title}</h2>`;
 
-        // Crea un enlace para el overlay
+        // Agregar enlace al overlay
         const link = document.createElement("a");
         link.href = image.link;
+        // link.target = "_blank" No se si usarlo , lo habre en otra pagina
         link.appendChild(overlay);
 
-        // Agrega la imagen y el enlace al contenedor de imagen
         imageContainer.appendChild(imgElement);
         imageContainer.appendChild(link);
-
-        // Agrega el contenedor de imagen al contenedor principal en el HTML
         imageGrid.appendChild(imageContainer);
     }
 }
 
-// Función para actualizar los botones de paginación
 function updatePaginationButtons() {
     const paginationContainer = document.getElementById('pagination');
     paginationContainer.innerHTML = '';
 
-    // Calcula el número total de páginas necesarias para mostrar todas las imágenes
     const totalPages = Math.ceil(images.length / imagesPerPage);
 
-    // Itera sobre las páginas y crea un botón para cada una
     for (let i = 1; i <= totalPages; i++) {
         const button = document.createElement('button');
         button.textContent = i;
         button.className = 'page-button';
-
-        // Agrega un evento de clic para cambiar a la página correspondiente
         button.addEventListener('click', () => {
             currentPage = i;
             showImages();
             updatePaginationButtons();
         });
-
-        // Agrega el botón al contenedor de paginación en el HTML
         paginationContainer.appendChild(button);
     }
-
-    // Ajusta el ancho del contenedor de imágenes para mantenerlas en una fila
-    imageGrid.style.width = (100 * Math.min(images.length, imagesPerPage)) + "%";
 }
 
-// Llama a las funciones para mostrar las imágenes y actualizar los botones de paginación
 showImages();
 updatePaginationButtons();
