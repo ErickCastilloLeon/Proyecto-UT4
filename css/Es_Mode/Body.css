@@ -1,5 +1,4 @@
 body{
-
         /*background-image: url("/img/general/background.png");*/
 }
 
@@ -10,7 +9,7 @@ a{
 
 /* Estilos para el contenedor izquierdo */
 #left-container{
-        top: 7%; /* Por si acaso */
+        top: 0;
         display: flex; /* Esto hace que los elementos dentro de este contenedor se comporten como una columna */
         /*flex-direction: column; /* Los elementos se colocarán uno encima del otro */
         align-items: center; /* Los elementos se alinearán al centro horizontalmente */
@@ -26,8 +25,7 @@ a{
 }
 
 #center-container {
-        padding-bottom: 5%;
-        top: 7%; /* Lo posicionamos un 7% desde la parte superior */
+        padding-bottom: 3%;
         /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
         left: 25%; /* Y lo colocamos justo en el borde izquierdo de la página */
 }
@@ -39,11 +37,13 @@ a{
         /* flex-direction: column; /* Los elementos se colocarán uno encima del otro */
         align-items: center; /* Los elementos se alinearán al centro horizontalmente */
         overflow-y: auto; /* Si hay demasiados elementos, permitirá desplazamiento vertical */
-        height: auto; /* Este contenedor ocupará toda la altura de la ventana del navegador */
+        height: 100%; /* Este contenedor ocupará toda la altura de la ventana del navegador */
         justify-content: center; /* Los elementos se centrarán verticalmente */
         text-align: center; /* El texto dentro de este contenedor se centrará */
         position: absolute; /* Posición absoluta...no hay más que decir */
         right: 0; /* Lo colocamos justo en el borde derecho de la página */
+        flex-direction: column;
+        width: 25%;
 }
 
 .right{
@@ -52,12 +52,9 @@ a{
 
 /* Estilos para los contenedores izquierdo y derecho */
 #left-container, #right-container {
-        /* Quiza deba agregar algo aqui...pero no estoy seguro */
+        padding-top: 3%;
 }
 
-.right , .left{
-        flex-direction: column;
-        width: 25%;
-        height: 100%;
-        position: absolute;
+.right , .left {
+
 }

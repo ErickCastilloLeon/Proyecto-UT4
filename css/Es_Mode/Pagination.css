@@ -78,7 +78,7 @@
     margin: 0 5px; /* Margen entre botones */
     cursor: pointer; /* Cambiar cursor al pasar por encima */
     padding: 5px 10px; /* Relleno interno */
-    background-color: #ffffff; /* Color de fondo blanco */
+    background-color: #e2e2e2; /* Color de fondo blanco */
     color: #000000; /* Color de texto negro */
     border: none; /* Sin borde */
     border-radius: 5px; /* Borde redondeado */
@@ -89,7 +89,6 @@
 
 /* Estilos para el contenedor de botones */
 .button-container {
-
     display: flex; /* Mostrar como flexbox */
     justify-content: space-around; /* Espacio uniforme entre los elementos */
     align-items: center; /* Alinear al centro verticalmente */

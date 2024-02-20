@@ -1,17 +1,18 @@
-import { name, age } from "./CoWiAnime.json";
+
+
 // Array de objetos que contiene información sobre imágenes
 const images = [
     // Cada objeto contiene src (fuente), alt (texto alternativo), title (título) y link (enlace)
-    { src: "https://www3.animeflv.net/uploads/animes/covers/7.jpg", alt: "Imagen 1", title: "One Piece", link: "html2.html"}, // Para que no se quede vacio
-    { src: "https://www3.animeflv.net/uploads/animes/covers/606.jpg", alt: "Imagen 2", title: "Detective Conan", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3751.jpg", alt: "Imagen 3", title: "High Card", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3762.jpg", alt: "Imagen 4", title: "Hikari no Ou", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3770.jpg", alt: "Imagen 5", title: "Boku no kokoro", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3790.jpg", alt: "Imagen 5", title: "Mashle", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3850.jpg", alt: "Imagen 6", title: "Synduality: Noir", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3859.jpg", alt: "Imagen 7", title: "Sousou no Frieren", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3860.jpg", alt: "Imagen 8", title: "Megumi no Daigo: Kyuukoku no Orange", link: "html2.html" },
-    { src: "https://www3.animeflv.net/uploads/animes/covers/3862.jpg", alt: "Imagen 9", title: "Ragna Crimson", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010001.webp", alt: "Imagen 1", title: "One Piece", link: "html2.html"}, // Para que no se quede vacio
+    { src: "/img/Contend/Anime/RJ01010002.webp", alt: "Imagen 2", title: "Detective Conan", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010003.webp", alt: "Imagen 3", title: "High Card", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010004.webp", alt: "Imagen 4", title: "Hikari no Ou", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010005.webp", alt: "Imagen 5", title: "Boku no kokoro", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010006.webp", alt: "Imagen 6", title: "Mashle", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010007.webp", alt: "Imagen 7", title: "Synduality: Noir", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010008.webp", alt: "Imagen 8", title: "Sousou no Frieren", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010009.webp", alt: "Imagen 9", title: "Megumi no Daigo: Kyuukoku no Orange", link: "html2.html" },
+    { src: "/img/Contend/Anime/RJ01010001.webp", alt: "Imagen 10", title: "Ragna Crimson", link: "html2.html" },
     { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 1", title: "Más contenido pronto", link: "html2.html" }, // Para que no se quede vacio
 ];
 // Número de imágenes que se mostrarán por página
@@ -37,6 +38,7 @@ function showImages() {
         const imageContainer = document.createElement("div");
         imageContainer.className = "image-container";
 
+
         // Crea un elemento de imagen
         const imgElement = document.createElement("img");
         imgElement.src = image.src;
@@ -60,3 +62,36 @@ function showImages() {
         imageGrid.appendChild(imageContainer);
     }
 }
+
+// Función para actualizar los botones de paginación
+function updatePaginationButtons() {
+    const paginationContainer = document.getElementById('pagination');
+    paginationContainer.innerHTML = '';
+
+    // Calcula el número total de páginas necesarias para mostrar todas las imágenes
+    const totalPages = Math.ceil(images.length / imagesPerPage);
+
+    // Itera sobre las páginas y crea un botón para cada una
+    for (let i = 1; i <= totalPages; i++) {
+        const button = document.createElement('button');
+        button.textContent = i;
+        button.className = 'page-button';
+
+        // Agrega un evento de clic para cambiar a la página correspondiente
+        button.addEventListener('click', () => {
+            currentPage = i;
+            showImages();
+            updatePaginationButtons();
+        });
+
+        // Agrega el botón al contenedor de paginación en el HTML
+        paginationContainer.appendChild(button);
+    }
+
+    // Ajusta el ancho del contenedor de imágenes para mantenerlas en una fila
+    imageGrid.style.width = (100 * Math.min(images.length, imagesPerPage)) + "%";
+}
+
+// Llama a las funciones para mostrar las imágenes y actualizar los botones de paginación
+showImages();
+updatePaginationButtons();
