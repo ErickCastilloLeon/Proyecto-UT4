@@ -5,11 +5,10 @@
     <link rel="icon" href="/img/General/IconLog.png" type="image/png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/Main_Mode/Header.css">
-    <link rel="stylesheet" href="/css/Main_Mode/Footer.css">
-    <link rel="stylesheet" href="/css/Main_Mode/Pagination.css">
-    <link rel="stylesheet" href="/css/Main_Mode/Body.css">
-    <link rel="stylesheet" href="/css/Main_Mode/Background.css">
+    <link rel="stylesheet" href="/css/Main/Header.css">
+    <link rel="stylesheet" href="/css/Main/Footer.css">
+    <link rel="stylesheet" href="/css/Main/Body.css">
+    <link rel="stylesheet" href="/css/Main/Background.css">
     <!--  <link rel="stylesheet" href="css/body.css"> -->
 </head>
 
@@ -46,8 +45,21 @@
         </div>
     </div>
 </header>
-<div>
+<div style="align-items: center; text-align: center; padding-top: 10%">
+    <form action="/submit_formulario" method="post">
+        <label for="categoria">Seleccione la categoría con el problema:</label><br>
+        <select id="categoria" name="categoria">
+            <option value="Categoria de Manga">Categoria de Manga</option>
+            <option value="Categoria de Anime">Categoria de Anime</option>
+            <option value="Categoria de Manhwa">Categoria de Manhwa</option>
+        </select>
+        <br> <!-- Para que haya espacio -->
+        <h2>Más especificaciones:</h2>
+        <textarea id="mas_especificaciones" name="especificaciones" rows="4" cols="50"></textarea><br><br>
 
+        <input type="submit" value="Enviar">
+    </form>
+    </form>
 </div>
 <footer class="footer">
     <div>

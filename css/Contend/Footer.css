@@ -1,0 +1,17 @@
+/* Estilos para el pie de página */
+footer {
+    left: 0;
+    text-align: center; /* El texto dentro del pie de página estará centrado */
+    width: 100%; /* El pie de página ocupará todo el ancho de la ventana del navegador */
+    padding: 10px; /* Agrega un espacio de 10px alrededor del contenido del pie de página */
+    background-color: #474747; /* El fondo del pie de página será de color gris oscuro */
+    position: fixed; /* El pie de página tendrá una posición fija */
+    bottom: 0; /* Estará fijado en la parte inferior de la ventana del navegador */
+    z-index: 5; /* Si hay otros elementos superpuestos, el pie de página estará en una capa superior */
+    /* box-sizing: border-box; /* Incluir bordes y relleno en el tamaño total */
+}
+
+.footer {
+    text-decoration: white;
+    color: white;
+}
