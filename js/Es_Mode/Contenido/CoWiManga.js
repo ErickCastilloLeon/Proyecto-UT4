@@ -1,5 +1,5 @@
 const images = [
-    { src: "/img/Contend/Manga/01010001.webp", alt: "Jujutsu Kaisen", title: "Jujutsu Kaisen", link: "Contend/Manga/Jujutsu_Kaisen.html" }, // Para que no se quede vacio
+    { src: "/img/Contend/Manga/01010001.webp", alt: "Jujutsu Kaisen", title: "Jujutsu Kaisen", link: "Contend/Manga/Chapter/Jujutsu_Kaisen.html" }, // Para que no se quede vacio
     { src: "/img/Contend/Manga/01010002.webp", alt: "One Piece", title: "One Piece", link: "Contend/Manga/" },
     { src: "/img/Contend/Manga/01010003.webp", alt: "Imagen 1", title: "Tensei Shitara Slime Datta Ken", link: "html2.html" },
     { src: "/img/Contend/Manga/01010004.webp", alt: "Imagen 4", title: "Chainsaw Man", link: "html2.html" },

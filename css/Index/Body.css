@@ -38,3 +38,19 @@ body{
         flex-direction: column;
         align-items: center; /* Centra las letras verticalmente */
 }
+
+/* ---------- A apartir de aqui es para cuando pase el cursor  ... si bien con js es más largo  ( más codigo ) lo uso por practica ----------- */
+
+#left-container:hover, #right-container:hover {
+        background-image: url("https://media1.tenor.com/m/-9lHctoXbJkAAAAC/toothless-toothless-dragon.gif");
+        filter: brightness(50%);
+}
+
+#left-container:hover #left-text, #right-container:hover #right-text {
+        color: white;
+        text-shadow: 0 0 10px white;
+}
+
+#right-container:hover #right-text {
+        text-shadow: 0 0 10px black;
+}
