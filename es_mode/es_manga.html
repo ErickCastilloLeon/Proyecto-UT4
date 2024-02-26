@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>HelperkerX</title>
+    <link rel="icon" href="../img/General/IconLogo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/category/manga/header.css">
+    <link rel="stylesheet" href="../css/category/manga/footer.css">
+    <link rel="stylesheet" href="../css/category/manga/pagination.css">
+    <link rel="stylesheet" href="../css/category/manga/body.css">
+    <link rel="stylesheet" href="../css/category/manga/background.css">
+  <!--  <link rel="stylesheet" href="css/body.css"> -->
+</head>
+
+<body>
+<!-- ---------------------------------------------------------------------------------- -->
+<header style="z-index: 4">
+    <div class="button-container">
+        <div class="button">
+            Contenidos <!-- No crei que funcionaria ponerlo sin etiqueta -->
+            <div class="list-container">
+                <!--  <a href="#" onclick="CargarAnime('js/Es_Mode/CoWiAnime.js')">Anime</a>
+                 <a href="#" onclick="CargarManga('js/Es_Mode/CoWiManga.js')">Manga</a>
+                 <a href="#" onclick="ReLoad('/js/Es_Mode/CoWiManhwa.js')">Manhwa</a>-->
+                <a href="../es_mode/es_anime.html">Animne</a>
+                <a href="../es_mode/es_manga.html">Manga</a>
+                <a href="../es_mode/es_manhwa.html">Manhwa</a>
+            </div>
+        </div>
+        <div class="button">
+            <a href="../Es_Mode/Es_Mode.html"><img src="../img/General/Logo.png" alt="Inicio" style="width:100px;height:auto;"></a>
+            <div class="list-container">
+            </div>
+        </div>
+
+        <div class="button">
+            Otros
+            <div class="list-container">
+                <a href="/es_mode/Es_PAA.html">Paginas Amigas</a>
+                <a href="/es_mode/s_ReSo.html">Redes sociales</a>
+                <a href="/es_mode/Es_Otros.html">Otros</a>
+            </div>
+        </div>
+        </div>
+</header>
+<div style="overflow-y: hidden" class="setting" id="left-container">
+    <a href="">Naruto</a> <!-- Shounen -->
+    <a href="">Attack on Titan</a> <!-- Shounen -->
+    <a href="">One Piece</a> <!-- Shounen -->
+    <a href="#">Death Note</a> <!-- Seinen -->
+    <a href="#">My Hero Academia</a> <!-- Shounen -->
+    <a href="#">Sword Art Online</a> <!-- Shounen -->
+    <a href="#">Demon Slayer</a> <!-- Shounen -->
+    <a href="#">One Punch Man</a> <!-- Seinen -->
+    <a href="#">Your Lie in April</a> <!-- Seinen -->
+    <a href="#">Clannad</a> <!-- Seinen -->
+    <a href="#">Neon Genesis Evangelion</a> <!-- Seinen -->
+    <a href="#">Gintama</a> <!-- Shounen -->
+    <a href="#">Fairy Tail</a> <!-- Shounen -->
+    <a href="#">Haikyuu!!</a> <!-- Shounen -->
+    <a href="#">Tokyo Ghoul</a> <!-- Seinen -->
+    <a href="#">Cowboy Bebop</a> <!-- Seinen -->
+    <a href="#">Black Clover</a> <!-- Shounen -->
+    <a href="#">The Promised Neverland</a> <!-- Shounen -->
+    <a href="#">Fullmetal Alchemist: Brotherhood</a> <!-- Shounen -->
+    <a href="#">Hunter x Hunter</a> <!-- Shounen -->
+    <a href="#">Ouran High School Host Club</a> <!-- Shoujo -->
+    <a href="#">Code Geass</a> <!-- Shounen -->
+    <a href="#">Psycho-Pass</a> <!-- Seinen -->
+    <a href="#">Yu Yu Hakusho</a> <!-- Shounen -->
+    <a href="#">Dragon Ball Z</a> <!-- Shounen -->
+    <a href="#">Bleach</a> <!-- Shounen -->
+    <a href="#">JoJo's Bizarre Adventure</a> <!-- Shounen -->
+    <a href="#">Nana</a> <!-- Josei -->
+    <a href="#">K-On!</a> <!-- Seinen -->
+    <a href="#">Love Live!</a> <!-- Seinen -->
+    <a href="#">Akira</a> <!-- Seinen -->
+    <a href="#">Vampire Knight</a> <!-- Shoujo -->
+    <a href="#">Ghost in the Shell</a> <!-- Seinen -->
+    <a href="#">Evangelion</a> <!-- Seinen -->
+    <a href="#">Gurren Lagann</a> <!-- Seinen -->
+    <a href="#">Trigun</a> <!-- Seinen -->
+    <a href="#">Black Lagoon</a> <!-- Seinen -->
+    <a href="#">High School of the Dead</a> <!-- Seinen -->
+</div>
+<!-- ---------------------------------------------------------------------------------- -->
+<div id="center-container"> <!-- ... -->
+    <!-- Contenedor principal para la imagen y la paginación -->
+    <div class="image-grid" id="imageGrid"></div>
+    <div class="pagination" id="pagination"></div>
+        <script src="../js/es_mode/manga.js"></script>
+</div>
+<div style="overflow-y: hidden" class="setting" id="right-container">
+        <a href="">Acción</a>
+        <a href="">Aventura</a>
+        <a href="#">Comedia</a>
+        <a href="#">Drama</a>
+        <a href="#">Fantasía</a>
+        <a href="#">Magia</a>
+        <a href="#">Mecha</a>
+        <a href="#">Misterio</a>
+        <a href="#">Psicológico</a>
+        <a href="#">Recuentos de la vida</a>
+        <a href="#">Romance</a>
+        <a href="#">Sci-Fi</a>
+        <a href="#">Slice of Life</a>
+        <a href="#">Sobrenatural</a>
+        <a href="#">Superpoderes</a>
+        <a href="#">Terror</a>
+        <a href="#">Ecchi</a>
+        <a href="#">Harem</a>
+        <a href="#">Shoujo</a>
+        <a href="#">Shounen</a> <!-- En ves de que sea un tag, pienso pasarlo a genero -->
+        <a href="#">Samurai</a>
+        <a href="#">Artes Marciales</a>
+        <a href="#">Deportes</a>
+        <a href="#">Espacial</a>
+        <a href="#">Militar</a>
+        <a href="#">Escolar</a>
+        <a href="#">Magical Girl</a>
+        <a href="#">Historico</a>
+        <a href="#">Parodia</a>
+        <a href="#">Seinen</a> <!-- En ves de que sea un tag, pienso pasarlo a genero -->
+        <a href="#">Josei</a>
+        <a href="#">Idol</a>
+        <a href="#">Música</a>
+        <a href="#">Cyberpunk</a>
+        <a href="#">Demonios</a>
+        <a href="#">Vampiros</a>
+        <a href="#">Fantasmas</a>
+        <a href="#">Robots</a>
+        <a href="#">Aliens</a>
+            <!-- Quizà exagerè... -->
+</div>
+
+<!-- No olvidar ingremar más....además de la sección popular -->
+
+<footer class="footer">
+    <div>
+        <a style="margin: 10%; color: white" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">Contacto</a>
+        <a style="margin: 10%; color: white; text-decoration: none" href="https://github.com/ErickCastilloLeon/Proyecto-UT4">«Copyright 2024 por HelperkerX»</a> <!-- Es mi usuario de twitter -->
+        <a style="margin: 10%; color: white" href="/Es_Mode/Es_Support.html">Soporte</a>
+    </div>
+</footer>
+</body>
+</html>
