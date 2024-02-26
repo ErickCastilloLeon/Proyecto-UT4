@@ -1,0 +1,61 @@
+@media only screen and (max-width: 1920px) {
+        body{
+        /*background-image: url("/img/general/background.png");*/
+}
+
+a{
+        color: black;
+        text-decoration: none;
+}
+
+/* Estilos para el contenedor izquierdo */
+#left-container{
+        left: 0; /* Y lo colocamos justo en el borde derecho de la página */
+}
+
+#center-container {
+        width: 50%;
+        position: absolute;
+        top: 10%; : 50%;
+        /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
+        left: 25%; /* Y lo colocamos justo en el borde izquierdo de la página */
+}
+
+/* Estilos para el contenedor derecho */
+#right-container {
+        left: 75%;
+
+}
+
+/* Estilos para los contenedores izquierdo y derecho */
+
+        #left-container, #right-container {
+                /* Tus estilos para 1280px */
+                display: grid;
+                align-items: center;
+                flex-direction: column;
+                position: absolute;
+                width: 25%;
+                overflow-y: auto;
+                height: 100%;
+                justify-content: center;
+                text-align: center;
+                padding-top: 7%;
+        }
+}
+
+/* -------------- Resolution 412------------------*/
+
+@media only screen and (max-width: 431px) {
+        #left-container, #right-container {
+                display: none; /* Oculta los contenedores */
+        }
+        #center-container {
+                width: 100%;
+
+                position: absolute;
+                top: 10%;
+                /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
+                left: 0;
+        }
+}
