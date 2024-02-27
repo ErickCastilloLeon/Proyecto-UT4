@@ -1,0 +1,27 @@
+@media only screen and (max-width: 1920px) {
+        body {
+                /*background-image: url("/img/general/background.png");*/
+        }
+
+        /* Estilos para el contenedor izquierdo */
+        #center-container {
+                width: 50%;
+                position: absolute;
+                top: 10%;: 50 %;
+                /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
+                left: 25%; /* Y lo colocamos justo en el borde izquierdo de la página */
+        }
+
+}
+/* -------------- Resolution 412------------------*/
+
+@media only screen and (max-width: 431px) {
+        #center-container {
+                width: 100%;
+
+                position: absolute;
+                top: 10%;
+                /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
+                left: 0;
+        }
+}

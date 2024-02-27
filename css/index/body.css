@@ -1,0 +1,65 @@
+a{
+        text-decoration: none;
+        color: peachpuff;
+}
+
+body{
+    /*background-image: url("img/General/background.png");*/  /* La imagen lo saque de mi blog */
+        background: #5e5e5e;
+        overflow: hidden;
+}
+
+
+
+#left-container, #right-container{  /* Para mostrar el contedido del script ajustable a la pantalla*/
+        position: absolute;
+        top: 0; /* Por si piemnso agregar un encabesado */
+        height: 100%;
+        width: 50%; /* Para que ambas partes cubran un 50%*/
+        display: flex; /* Para que las letras */
+        justify-content: center; /* Para que las letras */
+        align-items: center; /* Para que las letras */
+        overflow: hidden; /* Quiza esto sobra */
+        text-align: center;
+}
+
+#left-container { /* Para que se muestre al lado derecho */
+        left: 0;
+        background-color: white;
+        color: black;
+        transition: background-image 0.5s, filter 0.5s;
+        background-size: 100% auto; /*Ancho adaptado a la pantalla*/
+}
+
+#right-container { /* Para que se muestre al lado izquierdo */
+        right: 0;
+        background-color: black;
+        color: white;
+        transition: background-image 0.5s, filter 0.5s, color 0.5s;
+        background-size: 100% auto;
+}
+#left-text, #right-text { /* uso genral en ambos */
+        font-family: "Bell MT", serif;
+        font-size: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra las letras verticalmente */
+}
+
+/* ---------- A apartir de aqui es para cuando pase el cursor  ... si bien con js es más largo  ( más codigo ) lo uso por practica ----------- */
+
+#left-container:hover, #right-container:hover {
+        background-image: url("https://media1.tenor.com/m/-9lHctoXbJkAAAAC/toothless-toothless-dragon.gif");
+        filter: brightness(50%);
+}
+
+#left-container:hover #left-text, #right-container:hover #right-text {
+        text-decoration-color: white;
+        text-shadow: 0 0 10px white;
+        color: white;
+}
+
+#right-container:hover #right-text {
+        text-decoration-color: white;
+        text-shadow: 0 0 10px white;
+}

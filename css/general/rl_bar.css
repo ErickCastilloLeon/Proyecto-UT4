@@ -1,0 +1,86 @@
+.left-right{
+
+}
+
+.right-Ron {
+  width: 2%;
+  height: 100vh;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Estilos para la lista oculta */
+.right-Roff {
+  width: 0;
+  height: 100vh;
+  background-color: lightgray;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 2%; /* Alineación de la lista con la barra de activación */
+  transition: width 0.5s ease;
+  z-index: 1;
+}
+
+/* Estilos para la animación de mostrar la lista */
+
+
+/* Estilos para el lado derecho */
+.left-Lon {
+  width: 2%;
+  height: 100vh;
+  background-color: gray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left-Loff {
+  width: 0;
+  height: 100vh;
+  background-color: lightgray;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 2%;
+  transition: width 0.5s ease;
+  z-index: 1;
+}
+.Ron {
+  width: 20%;
+  padding: 20px;
+  top:5% ;
+  position: fixed;
+  margin-bottom: 10%;
+}
+
+.Lon{
+  width: 20%;
+  padding: 20px;
+  top:5% ;
+  position: fixed;
+  margin-bottom: 10%;
+}
+
+/* Estilo general */
+.lrlist-contend {
+  top:2% ;
+  display: grid;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista Oculta</title>
+<style>
+  /* Estilos para el lado izquierdo */
+  /* Estilos para la barra de activación */
+  .right-Ron {
+    width: 2%;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  /* Estilos para la lista oculta */
+  .right-Roff {
+    width: 0;
+    height: 100vh;
+    background-color: lightgray;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 2%; /* Alineación de la lista con la barra de activación */
+    transition: width 0.5s ease;
+    z-index: 1;
+  }
+
+  /* Estilos para la animación de mostrar la lista */
+  .Ron {
+    width: 25%;
+  }
+
+  /* Estilos para el lado derecho */
+  .left-Lon {
+    width: 2%; 
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .left-Loff {
+    width: 0;
+    height: 100vh;
+    background-color: lightgray;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 2%; 
+    transition: width 0.5s ease;
+    z-index: 1;
+  }
+
+  .Lon {
+    width: 25%; 
+  }
+
+  /* Estilo general */
+  .list-container {
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="right-Ron"></div>
+
+<div class="right-Roff">
+  <div class="list-container">
+    <h2>Lista Oculta</h2>
+    <ul>
+      <li>Elemento 1</li>
+      <li>Elemento 2</li>
+      <li>Elemento 3</li>
+      <li>Elemento 4</li>
+      <li>Elemento 5</li>
+      <li>Elemento 6</li>
+      <li>Elemento 7</li>
+      <li>Elemento 8</li>
+      <li>Elemento 9</li>
+      <li>Elemento 10</li>
+    </ul>
+  </div>
+</div>
+
+<div class="left-Lon"></div>
+
+<div class="left-Loff">
+    <div class="list-container">
+      <h2>Lista Oculta</h2>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>Elemento 5</li>
+        <li>Elemento 6</li>
+        <li>Elemento 7</li>
+        <li>Elemento 8</li>
+        <li>Elemento 9</li>
+        <li>Elemento 10</li>
+      </ul>
+    </div>
+</div>
+
+<script>
+  // Función para alternar la clase 'mostrar' en la lista oculta
+  document.querySelector('.right-Ron').addEventListener('click', function() {
+    document.querySelector('.right-Roff').classList.toggle('Ron');
+  });
+
+  document.querySelector('.left-Lon').addEventListener('click', function() {
+    document.querySelector('.left-Loff').classList.toggle('Lon');
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+.chapters a{
+        display: block; /* Cambiar a block para mostrar verticalmente */
+        border: 1px solid #000;
+        margin: 15px;
+        padding: 10px;
+        text-decoration: none; /* Para quitar el subrayado predeterminado */
+        color: black; /* Color del texto */
+}
+
+body{
+
+}
+.container {
+        max-width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+}
+.image {
+        display: inline-block;
+        margin-right: 20px;
+}
+.info {
+        text-align: left;
+}
+.chapters {
+        text-align: left;
+}

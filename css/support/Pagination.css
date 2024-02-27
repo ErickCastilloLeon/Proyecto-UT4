@@ -1,0 +1,101 @@
+/* Definición de la animación fadeIn */
+@keyframes fadeIn {
+    from { opacity: 0; } /* Empieza con opacidad 0 */
+    to { opacity: 1; } /* Termina con opacidad 1 */
+}
+
+/* Estilos para el overlay */
+.overlay {
+    position: fixed; /* Fijo en la ventana del navegador */
+    top: 0; /* Estará en la parte superior */
+    left: 0; /* Estará en la parte izquierda */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background-color: rgba(0, 0, 0, 0.1); /* Color de fondo con opacidad del 10% */
+    background-size: cover; /* Ajuste de tamaño de fondo */
+    background-position: center; /* Posición del fondo */
+    background-blend-mode: multiply; /* Mezcla el fondo con el contenido */
+    z-index: 1; /* Índice de apilamiento */
+}
+
+/* Estilos para la cuadrícula de imágenes */
+.image-grid {
+    padding-top: 5%;
+    display: grid; /* Mostrar como cuadrícula */
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas de mismo tamaño */
+    grid-gap: 5%; /* Espacio entre imágenes */
+    max-width: 100%; /* Ancho máximo */
+    align-items: center; /* Alineación de las imagenes */
+}
+
+/* Estilos para el contenedor de imágenes */
+.image-container {
+    position: relative; /* Posición relativa */
+    display: flex; /* Mostrar como flexbox */
+    align-items: center; /* Alinear al centro verticalmente */
+    justify-content: center; /* Alinear al centro horizontalmente */
+    overflow: hidden; /* Ocultar el contenido que sobresale */
+}
+
+/* Estilos para las imágenes dentro del contenedor */
+.image-container img {
+    width: 100%; /* Ancho completo dentro del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilos para el overlay sobre las imágenes */
+.image-overlay {
+    position: absolute; /* Posición absoluta */
+    top: 0; /* Arriba del contenedor */
+    left: 0; /* Izquierda del contenedor */
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    background: rgba(0, 0, 0, 0.5); /* Fondo con opacidad del 50% */
+    color: white; /* Color de texto blanco */
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column; /* Dirección de los elementos */
+    justify-content: center; /* Alinear al centro verticalmente */
+    align-items: center; /* Alinear al centro horizontalmente */
+    text-align: center; /* Alinear texto al centro */
+    opacity: 0; /* Opacidad inicial */
+    transition: opacity 0.3s ease-in-out; /* Transición suave de opacidad */
+}
+
+/* Estilos para mostrar el overlay al pasar el cursor sobre el contenedor de imágenes */
+.image-container:hover .image-overlay {
+    opacity: 1; /* Opacidad al 100% */
+
+}
+
+/* Estilos para la paginación */
+.pagination {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Alinear al centro horizontalmente */
+    margin-top: 20px; /* Margen superior */
+    padding-bottom: 7%;
+}
+
+/* Estilos para los botones de paginación */
+/* Estilos para los botones de paginación */
+.page-button {
+    margin: 0 5px; /* Margen entre botones */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    padding: 5px 10px; /* Relleno interno */
+    background-color: #e2e2e2; /* Color de fondo blanco */
+    color: #000000; /* Color de texto negro */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    display: block; /* Mostrar como elemento de bloque */
+    /* Estoy pensando en agregar un estilo que permita ....No sabria explicar esa parte*/
+}
+
+
+/* Estilos para el contenedor de botones */
+.button-container {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: space-around; /* Espacio uniforme entre los elementos */
+    align-items: center; /* Alinear al centro verticalmente */
+    width: 100%; /* Ancho completo */
+    max-width: calc(100% - 40px); /* Ancho máximo con un margen */
+    margin: 0 20px; /* Margen izquierdo y derecho */
+}
