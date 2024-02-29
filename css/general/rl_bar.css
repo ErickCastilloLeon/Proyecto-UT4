@@ -1,98 +1,211 @@
+@media only screen and (min-width: 1px) {
+  .left-right{
+
+  }
+
+  .right-Ron {
+    width: 2%;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  /* Estilos para la lista oculta */
+  .right-Roff {
+    width: 0;
+    height: 100vh;
+    background-color: lightgray;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 2%; /* Alineación de la lista con la barra de activación */
+    transition: width 0.5s ease;
+    z-index: 1;
+  }
+
+  /* Estilos para la animación de mostrar la lista */
+
+
+  /* Estilos para el lado derecho */
+  .left-Lon {
+    width: 2%;
+    height: 100vh;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .left-Loff {
+    width: 0;
+    height: 100vh;
+    background-color: lightgray;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 2%;
+    transition: width 0.5s ease;
+    z-index: 1;
+  }
+
+  /* Te explico los calculos , derecha ( right ) tendrá untamaño del 90% , un 2% ocupa la barra , el 3% el padding ,
+   con lo de izquierda ( left ) sucede lo mismo , es decir 2+3 = 5 x 2 = 10 + 90 = 100%  no se aplica el 90% de izquierda */
+  .Ron {
+    width: 90%;
+    padding: 3%;
+    top:5% ;
+    position: fixed;
+    margin-bottom: 10%;
+  }
+
+  .Lon{
+    width: 90%;
+    padding: 3%;
+    top:5% ;
+    position: fixed;
+    margin-bottom: 10%;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  /* Estilo general */
+  .rllist-contend {
+    top:2% ;
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    text-align: center;
+    overflow-y: auto;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  .rllist-contend a:nth-child(odd) {
+    color: black;
+    background-color: #b7b7b7;
+  }
+
+  .rllist-contend a:nth-child(even) {
+
+  }
+}
+
 .left-right{
 
 }
 
 .right-Ron {
-  width: 2%;
-  height: 100vh;
-  background-color: gray;
-  position: fixed;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  z-index: 2;
+
 }
 
-/* Estilos para la lista oculta */
 .right-Roff {
-  width: 0;
-  height: 100vh;
-  background-color: lightgray;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  right: 2%; /* Alineación de la lista con la barra de activación */
-  transition: width 0.5s ease;
-  z-index: 1;
+
 }
 
-/* Estilos para la animación de mostrar la lista */
-
-
-/* Estilos para el lado derecho */
 .left-Lon {
-  width: 2%;
-  height: 100vh;
-  background-color: gray;
-  position: fixed;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-  z-index: 2;
+
 }
 
 .left-Loff {
-  width: 0;
-  height: 100vh;
-  background-color: lightgray;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 2%;
-  transition: width 0.5s ease;
-  z-index: 1;
+
 }
 .Ron {
   width: 15%;
   padding: 20px;
   top:5% ;
-  position: fixed;
-  margin-bottom: 10%;
 }
 
 .Lon{
 padding: 20px;
   width: 15%;
   top:5% ;
-  position: fixed;
-  margin-bottom: 10%;
 }
 
 a{
-  text-decoration: none;
 }
 
-/* Estilo general */
+
 .rllist-contend {
-  top:2% ;
-  display: grid;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  height: 100%;
-  text-align: center;
-  overflow-y: auto;
+
 }
 
 ::-webkit-scrollbar {
-  display: none;
+
 }
 
 .rllist-contend a:nth-child(odd) {
-  color: black;
-  background-color: #b7b7b7;
+
 }
 
 .rllist-contend a:nth-child(even) {
 
 }
+
+
+@media only screen and (min-width: 768px) {
+  .left-right{
+
+  }
+
+  .right-Ron {
+
+  }
+
+  .right-Roff {
+
+  }
+
+  .left-Lon {
+
+  }
+
+  .left-Loff {
+
+  }
+
+  .Ron {
+    width: 35%;
+    padding: 3%;
+    top:5% ;
+  }
+
+  .Lon{
+    width: 35%;
+    padding: 3%;
+    top:5% ;
+  }
+
+  a{
+
+  }
+
+
+  .rllist-contend {
+
+  }
+
+  ::-webkit-scrollbar {
+
+  }
+
+  .rllist-contend a:nth-child(odd) {
+
+  }
+
+  .rllist-contend a:nth-child(even) {
+
+  }
+}
+
