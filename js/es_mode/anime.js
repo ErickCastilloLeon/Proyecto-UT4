@@ -15,83 +15,90 @@ const images = [
     { src: "../img/Contend/Anime/RJ01010001.webp", alt: "Imagen 10", title: "Ragna Crimson", link: "html2.html" },
     { src: "https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif", alt: "Imagen 1", title: "Más contenido pronto", link: "html2.html" }, // Para que no se quede vacio
 ];
-// Número de imágenes que se mostrarán por página
-const imagesPerPage = 9;
+// El por defecto , basicamente la resolucion 1024 o más
+let columns = 1;
+let rows = 3;
+let imagesPerPage = 9; // Variable global para almacenar la cantidad de imágenes por página
 
-// Página actual que se está mostrando
+// Pagina a mostrarse ...practicamente el inicio
 let currentPage = 1;
 
-// Función para mostrar las imágenes en la página actual
+function adjustColumnsAndRows() { // quien diria que los if que tanto utilisaba en java me terminaria ayudando en esto
+    if (window.innerWidth >= 1024) { // Pantalla grande como laptops y PC cuyas pantallas sean más grandes
+        columns = 3;
+        rows = 3;
+        imagesPerPage = 9; // 3 columnas x 3 filas = 9 imágenes
+    } else if (window.innerWidth >= 768) { // Pantalla mediana, como tablets por ejemplos o mini laptops
+        columns = 2;
+        rows = 3;
+        imagesPerPage = 6; // 2 columnas x 3 filas = 6 imágenes
+    } else { // Basicamente si no se cumple ninguno de las condiciones anteriores se ejecutará este...algo asi es 1
+        columns = 1;
+        rows = 3;
+        imagesPerPage = 3; // 1 columna x 3 filas = 3 imágenes
+    }
+    //
+}
+
 function showImages() {
+    adjustColumnsAndRows();
+
     const start = (currentPage - 1) * imagesPerPage;
     const end = start + imagesPerPage;
 
-    // Obtiene el contenedor de imágenes en el HTML
     const imageGrid = document.getElementById("imageGrid");
     imageGrid.innerHTML = '';
 
-    // Itera sobre las imágenes para mostrarlas en la página
+    //document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
+    document.body.style.backgroundSize = "90% auto"; // 75% de ancho y altura automática
+    document.body.style.backgroundRepeat = "no-repeat";
+    document.body.style.backgroundPosition = "center"; // Centrar la imagen */
+
+    // Iterar sobre las imágenes para mostrarlas en la página , cierta parte del codigo me base en el codigo de TMO
     for (let i = start; i < end && i < images.length; i++) {
         const image = images[i];
 
-        // Crea un contenedor para la imagen
         const imageContainer = document.createElement("div");
         imageContainer.className = "image-container";
 
-
-        // Crea un elemento de imagen
         const imgElement = document.createElement("img");
         imgElement.src = image.src;
         imgElement.alt = image.alt;
 
-        // Crea un overlay para mostrar el título al pasar el cursor
-        const overlay = document.createElement("div");
+        const overlay = document.createElement("div"); // Para cuando el cursor pase se muestre el titulo
         overlay.className = "image-overlay";
         overlay.innerHTML = `<h2 class="centered-text">${image.title}</h2>`;
 
-        // Crea un enlace para el overlay
+        // Agregar enlace al overlay
         const link = document.createElement("a");
         link.href = image.link;
+        // link.target = "_blank" No se si usarlo , lo habre en otra pagina
         link.appendChild(overlay);
 
-        // Agrega la imagen y el enlace al contenedor de imagen
         imageContainer.appendChild(imgElement);
         imageContainer.appendChild(link);
-
-        // Agrega el contenedor de imagen al contenedor principal en el HTML
         imageGrid.appendChild(imageContainer);
     }
 }
 
-// Función para actualizar los botones de paginación
 function updatePaginationButtons() {
     const paginationContainer = document.getElementById('pagination');
     paginationContainer.innerHTML = '';
 
-    // Calcula el número total de páginas necesarias para mostrar todas las imágenes
     const totalPages = Math.ceil(images.length / imagesPerPage);
 
-    // Itera sobre las páginas y crea un botón para cada una
     for (let i = 1; i <= totalPages; i++) {
         const button = document.createElement('button');
         button.textContent = i;
         button.className = 'page-button';
-
-        // Agrega un evento de clic para cambiar a la página correspondiente
         button.addEventListener('click', () => {
             currentPage = i;
             showImages();
             updatePaginationButtons();
         });
-
-        // Agrega el botón al contenedor de paginación en el HTML
         paginationContainer.appendChild(button);
     }
-
-    // Ajusta el ancho del contenedor de imágenes para mantenerlas en una fila
-    imageGrid.style.width = (100 * Math.min(images.length, imagesPerPage)) + "%";
 }
 
-// Llama a las funciones para mostrar las imágenes y actualizar los botones de paginación
 showImages();
 updatePaginationButtons();

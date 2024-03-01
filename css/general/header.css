@@ -42,7 +42,7 @@ header {
     position: absolute; /* Posición absoluta */
     top: 100%; /* Posición desde la parte superior del botón */
     left: 0; /* Posición desde la izquierda del botón */
-    background-color: #6b6b6b; /* Color de fondo */
+    background-color: #474747; /* Color de fondo */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra */
     z-index: 1; /* Índice de apilamiento */
     width: 100%; /* Ancho completo */

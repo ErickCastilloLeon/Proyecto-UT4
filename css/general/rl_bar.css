@@ -53,20 +53,17 @@
     transition: width 0.5s ease;
     z-index: 1;
   }
-
-  /* Te explico los calculos , derecha ( right ) tendrá untamaño del 90% , un 2% ocupa la barra , el 3% el padding ,
-   con lo de izquierda ( left ) sucede lo mismo , es decir 2+3 = 5 x 2 = 10 + 90 = 100%  no se aplica el 90% de izquierda */
   .Ron {
     width: 90%;
-    padding: 3%;
+    padding: 1%;
     top:5% ;
     position: fixed;
     margin-bottom: 10%;
   }
 
   .Lon{
+    padding: 1%;
     width: 90%;
-    padding: 3%;
     top:5% ;
     position: fixed;
     margin-bottom: 10%;
@@ -75,6 +72,8 @@
   a{
     text-decoration: none;
   }
+
+
 
   /* Estilo general */
   .rllist-contend {
@@ -102,110 +101,27 @@
   }
 }
 
-.left-right{
+  @media only screen and (min-width: 768px) {
+    .Ron {
+      width: 90%;
+      padding: 3%;
+    }
 
-}
-
-.right-Ron {
-
-}
-
-.right-Roff {
-
-}
-
-.left-Lon {
-
-}
-
-.left-Loff {
-
-}
-.Ron {
-  width: 15%;
-  padding: 20px;
-  top:5% ;
-}
-
-.Lon{
-padding: 20px;
-  width: 15%;
-  top:5% ;
-}
-
-a{
-}
-
-
-.rllist-contend {
-
-}
-
-::-webkit-scrollbar {
-
-}
-
-.rllist-contend a:nth-child(odd) {
-
-}
-
-.rllist-contend a:nth-child(even) {
-
-}
-
-
-@media only screen and (min-width: 768px) {
-  .left-right{
-
+    .Lon{
+      width: 90%;
+      padding: 3%;
+    }
   }
 
-  .right-Ron {
+  @media only screen and (min-width: 1024px) {
+    .Ron {
+      width: 18%;
+      padding: 1%;
+    }
+
+    .Lon{
+      width: 18%;
+      padding: 1%;
+    }
 
   }
-
-  .right-Roff {
-
-  }
-
-  .left-Lon {
-
-  }
-
-  .left-Loff {
-
-  }
-
-  .Ron {
-    width: 35%;
-    padding: 3%;
-    top:5% ;
-  }
-
-  .Lon{
-    width: 35%;
-    padding: 3%;
-    top:5% ;
-  }
-
-  a{
-
-  }
-
-
-  .rllist-contend {
-
-  }
-
-  ::-webkit-scrollbar {
-
-  }
-
-  .rllist-contend a:nth-child(odd) {
-
-  }
-
-  .rllist-contend a:nth-child(even) {
-
-  }
-}
-

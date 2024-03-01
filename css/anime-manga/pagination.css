@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1px) {
+@media only screen and (min-width: 0px) {
     /* Definición de la animación fadeIn */
     @keyframes fadeIn {
         from { opacity: 0; } /* Empieza con opacidad 0 */
@@ -21,9 +21,9 @@
 
     /* Estilos para la cuadrícula de imágenes */
     .image-grid {
-        padding-top: 15%;
+        padding-top: 5%;
         display: grid; /* Mostrar como cuadrícula */
-        grid-template-columns: repeat(3, 1fr); /* Tres columnas de mismo tamaño */
+        grid-template-columns: repeat(1, 1fr); /* Cambiar a una columna para pantallas pequeñas */
         grid-gap: 5%; /* Espacio entre imágenes */
         max-width: 100%; /* Ancho máximo */
         align-items: center; /* Alineación de las imagenes */
@@ -104,94 +104,14 @@
 
 
 @media only screen and (min-width: 768px) {
-
-    @keyframes fadeIn {
-
-    }
-
-    .overlay {
-
-    }
-
     .image-grid {
-        padding-top: 10%;
-
-    }
-
-    .image-container {
-
-    }
-
-    .image-container img {
-
-    }
-
-    .image-overlay {
-
-    }
-
-    .image-container:hover .image-overlay {
-
-
-    }
-
-
-    .pagination {
-
-    }
-
-    .page-button {
-
-    }
-
-
-    /* Estilos para el contenedor de botones */
-    .button-container {
-
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas medianas */
     }
 }
 
-
 @media only screen and (min-width: 1024px) {
-
-    @keyframes fadeIn {
-
-    }
-
-    .overlay {
-
-    }
-
     .image-grid {
-        padding-top: 5%;
-    }
-
-    .image-container {
-
-    }
-
-    .image-container img {
-
-    }
-
-    .image-overlay {
-
-    }
-
-    .image-container:hover .image-overlay {
-
-    }
-
-    .pagination {
-
-    }
-
-    .page-button {
-
-    }
-
-    .button-container {
-
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas para pantallas grandes */
     }
 
 }

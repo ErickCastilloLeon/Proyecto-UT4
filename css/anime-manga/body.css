@@ -1,33 +1,40 @@
-@media only screen and (min-width: 1px) {
-        #center-container {
-                padding-top: 5%;
-                width: 90%;
-                padding-left: 5%;
-
-        }
-}
-
-@media only screen and (min-width: 768px) {
-        #center-container {
-
-        }
-}
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 0px) {
         body {
                 /*background-image: url("/img/general/background.png");*/
         }
 
+        /* Estilos para el contenedor izquierdo */
         #center-container {
-                padding-top: 5%;
-                padding-left: 20%;
-                padding-right: 20%;
-                width: 60%;
+                width: 100%;
                 position: absolute;
+                top: 10%;: 50 %;
+                left: 0;
+                /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
+
+        }
+
+}
+/* -------------- Resolution 412------------------*/
+
+@media only screen and (min-width:  768px) {
+        body {
+                /*background-image: url("/img/general/background.png");*/
+        }
+
+        /* Estilos para el contenedor izquierdo */
+        #center-container {
+                width: 50%;
+                position: absolute;
+                top: 10%;: 50 %;
+                /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
+                left: 25%; /* Y lo colocamos justo en el borde izquierdo de la página */
         }
 
 }
 
+@media only screen and (min-width: 1024px){
+        width: 50%;
+        top: 10%;: 50 %;
+        left: 25%; /* Y lo colocamos justo en el borde izquierdo de la página */
 
-
-
+}

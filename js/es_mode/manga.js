@@ -17,22 +17,44 @@ const images = [
     { src: "../img/Contend/Manga/02010005.webp", alt: "Imagen 15", title: "i vida ideal de otro mundo - Reencarnación en un mundo lleno de chicas Nekomimi", link: "html2.html" },
     { src: "../img/Contend/Manga/02010006.webp", alt: "Imagen 16", title: "Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen", link: "html2.html" },
 ];
-// La cantidad de imágenes que se msotraran por pagina
-const imagesPerPage = 9;
+// El por defecto , basicamente la resolucion 1024 o más
+let columns = 1;
+let rows = 3;
+let imagesPerPage = 9; // Variable global para almacenar la cantidad de imágenes por página
+
+// Pagina a mostrarse ...practicamente el inicio
 let currentPage = 1;
 
+function adjustColumnsAndRows() { // quien diria que los if que tanto utilisaba en java me terminaria ayudando en esto
+    if (window.innerWidth >= 1024) { // Pantalla grande como laptops y PC cuyas pantallas sean más grandes
+        columns = 3;
+        rows = 3;
+        imagesPerPage = 9; // 3 columnas x 3 filas = 9 imágenes
+    } else if (window.innerWidth >= 768) { // Pantalla mediana, como tablets por ejemplos o mini laptops
+        columns = 2;
+        rows = 3;
+        imagesPerPage = 6; // 2 columnas x 3 filas = 6 imágenes
+    } else { // Basicamente si no se cumple ninguno de las condiciones anteriores se ejecutará este...algo asi es 1
+        columns = 1;
+        rows = 3;
+        imagesPerPage = 3; // 1 columna x 3 filas = 3 imágenes
+    }
+    //
+}
+
 function showImages() {
+    adjustColumnsAndRows();
+
     const start = (currentPage - 1) * imagesPerPage;
     const end = start + imagesPerPage;
 
     const imageGrid = document.getElementById("imageGrid");
     imageGrid.innerHTML = '';
 
-    // Agregar fondo al cuerpo de la página
     //document.body.style.backgroundImage = "url('https://media.tenor.com/RcX3hUY425kAAAAj/toothless-dragon-toothless.gif')";
     document.body.style.backgroundSize = "90% auto"; // 75% de ancho y altura automática
     document.body.style.backgroundRepeat = "no-repeat";
-    document.body.style.backgroundPosition = "center"; // Centrar la imagen
+    document.body.style.backgroundPosition = "center"; // Centrar la imagen */
 
     // Iterar sobre las imágenes para mostrarlas en la página , cierta parte del codigo me base en el codigo de TMO
     for (let i = start; i < end && i < images.length; i++) {
