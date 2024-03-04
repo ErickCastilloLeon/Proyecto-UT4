@@ -1,9 +1,6 @@
-
-
-// Array de objetos que contiene información sobre imágenes
 const images = [
     // Cada objeto contiene src (fuente), alt (texto alternativo), title (título) y link (enlace)
-    { src: "../../img/Contend/Anime/RJ01010001.webp", alt: "Imagen 1", title: "One Piece", link: "html2.html"}, // Para que no se quede vacio
+    { src: "../img/Contend/Anime/RJ01010001.webp", alt: "Imagen 1", title: "One Piece", link: "html2.html"}, // Para que no se quede vacio
     { src: "../img/Contend/Anime/RJ01010002.webp", alt: "Imagen 2", title: "Detective Conan", link: "html2.html" },
     { src: "../img/Contend/Anime/RJ01010003.webp", alt: "Imagen 3", title: "High Card", link: "html2.html" },
     { src: "../img/Contend/Anime/RJ01010004.webp", alt: "Imagen 4", title: "Hikari no Ou", link: "html2.html" },
@@ -67,7 +64,7 @@ function showImages() {
 
         const overlay = document.createElement("div"); // Para cuando el cursor pase se muestre el titulo
         overlay.className = "image-overlay";
-        overlay.innerHTML = `<h2 class="centered-text">${image.title}</h2>`;
+        overlay.innerHTML = `<h2w class="centered-text">${image.title}</h2w>`;
 
         // Agregar enlace al overlay
         const link = document.createElement("a");

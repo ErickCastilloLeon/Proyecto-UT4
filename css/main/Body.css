@@ -1,0 +1,32 @@
+@media only screen and (max-width: 1920px) {
+        body{
+        /*background-image: url("/img/general/background.png");*/
+}
+
+a{
+        color: black;
+        text-decoration: none;
+}
+
+/* Estilos para el contenedor izquierdo */
+.Imagen1{
+        left: 0; /* Y lo colocamos justo en el borde derecho de la página */
+}
+
+        .Imagen1{
+                left: 0; /* Y lo colocamos justo en el borde derecho de la página */
+        }
+
+#center-container {
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
+        left: 0;
+        right: 0;
+}
+
+}

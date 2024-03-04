@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple search</title>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+
+	body{
+		background-color: #f2f2f2;
+	}
+
+	h1{
+		text-align: center;
+	}
+
+	.content{
+		width: 60%;
+		height: 100vh;
+		margin: 0 auto;
+		display: block;
+		font-family: "Open Sans";
+		background-color: white;
+		padding: 25px;
+	}
+
+	form{
+		width: 100%;
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	form #q{
+		width: 100%;
+		text-align: center;
+		padding: 5px 0px;
+	}
+
+	table,
+	table tr{
+		width: 100%;
+	}
+
+	table,
+	table tr,
+	table tr th,
+	table tr td{
+		border: 1px solid lightgray;
+		border-collapse: collapse;
+	}
+
+	table tr th,
+	table tr td{
+		padding: 5px 15px;
+	}
+
+</style>
+</head>
+<body>
+	<div class="content">
+		<h1>Search in table</h1>
+		<form>
+			<input type="text" id="q" placeholder="Type to filter..." onkeyup="search()">
+		</form>
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Name</th>
+					<th>First name</th>
+				</tr>
+			</thead>
+			<tbody id="the_table_body">
+				<tr>
+					<td>1</td>
+					<td>John</td>
+					<td>Smith</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Adam</td>
+					<td>Sandler</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Maria</td>
+					<td>Martins</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Hanna</td>
+					<td>Isabel</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Jack</td>
+					<td>Jones</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Alfred</td>
+					<td>Hitchcock</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+<script type="text/javascript">
+		function search(){
+			var num_cols, display, input, filter, table_body, tr, td, i, txtValue;
+			num_cols = 3;
+			input = document.getElementById("q");
+			filter = input.value.toUpperCase();
+			table_body = document.getElementById("the_table_body");
+			tr = table_body.getElementsByTagName("tr");
+
+			for(i=0; i< tr.length; i++){
+				display = "none";
+				for(j=0; j < num_cols; j++){
+					td = tr[i].getElementsByTagName("td")[j];
+					if(td){
+						txtValue = td.textContent || td.innerText;
+						if(txtValue.toUpperCase().indexOf(filter) > -1){
+							display = "";
+						}
+					}
+				}
+				tr[i].style.display = display;
+			}
+		}
+	</script>
+</body>
+</html>

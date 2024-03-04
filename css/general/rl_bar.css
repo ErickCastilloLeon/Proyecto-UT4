@@ -49,21 +49,19 @@
     overflow: hidden;
     position: fixed;
     top: 0;
-    left: 2%;
+    left: 0;
     transition: width 0.5s ease;
     z-index: 1;
   }
   .Ron {
     width: 90%;
-    padding: 1%;
     top:5% ;
     position: fixed;
     margin-bottom: 10%;
   }
 
   .Lon{
-    padding: 1%;
-    width: 90%;
+    width: 100%;
     top:5% ;
     position: fixed;
     margin-bottom: 10%;
@@ -73,55 +71,64 @@
     text-decoration: none;
   }
 
-
-
-  /* Estilo general */
-  .rllist-contend {
-    top:2% ;
-    display: grid;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    height: 100%;
-    text-align: center;
-    overflow-y: auto;
-  }
-
   ::-webkit-scrollbar {
     display: none;
   }
 
-  .rllist-contend a:nth-child(odd) {
-    color: black;
-    background-color: #b7b7b7;
+  .text-list{
+    margin-left: 6%;
+    margin-right: 8% ;
   }
 
-  .rllist-contend a:nth-child(even) {
+  .text-list a:nth-child(odd) {
+    color: black;
+    background-color: #808080;
+  }
 
+  .text-list a:nth-child(even) {
+    color: black;
+    background-color: #a8a7a7;
+  }
+
+  .text-list a:hover {
+    color: black;
+    background-color: #eeeebe;
   }
 }
 
-  @media only screen and (min-width: 768px) {
-    .Ron {
-      width: 90%;
-      padding: 3%;
-    }
-
-    .Lon{
-      width: 90%;
-      padding: 3%;
-    }
+@media only screen and (min-width: 768px) {
+  .Ron {
+    width: 100%;
   }
 
-  @media only screen and (min-width: 1024px) {
-    .Ron {
-      width: 18%;
-      padding: 1%;
-    }
-
-    .Lon{
-      width: 18%;
-      padding: 1%;
-    }
-
+  .Lon{
+    width: 100%;
   }
+
+  .text-list{
+    margin-left: 4%;
+    margin-right: 8% ;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .Ron {
+    width: 20%;
+  }
+
+  .Lon{
+    width: 23%;
+    padding-top: 1%;
+  }
+
+  .left-Lon {
+    width: 2%;
+  }
+
+  .text-list{
+    margin-left: 12%;
+    margin-right: 14% ;
+  }
+
+
+}

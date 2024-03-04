@@ -1,0 +1,68 @@
+/* Estilos para la clase image-container */
+.image-container {
+        display: inline-block;
+        position: relative;
+        margin: 10px;
+}
+
+/* Estilos para la imagen */
+.image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+}
+
+/* Estilos para el overlay */
+.image-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        color: white;
+        text-align: center;
+        opacity: 0; /* Inicialmente transparente */
+        transition: opacity 0.3s ease; /* Transición suave */
+}
+
+/* Estilos para el texto centrado en el overlay */
+.centered-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+
+/* Mostrar el overlay al pasar el cursor */
+.image-container:hover .image-overlay {
+        opacity: 1;
+}
+
+/* Estilos para los botones de paginación */
+.page-button {
+        background-color: #f0f0f0;
+        border: 1px solid #ddd;
+        color: #333;
+        padding: 5px 10px;
+        margin: 0 2px;
+        cursor: pointer;
+}
+
+/* Estilos para los botones de paginación activos */
+.page-button.active {
+        background-color: #4CAF50;
+        color: white;
+}
+@media only screen and (min-width: 768px) {
+        .image-grid {
+                grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas medianas */
+        }
+}
+
+@media only screen and (min-width: 1024px) {
+        .image-grid {
+                grid-template-columns: repeat(3, 1fr); /* Tres columnas para pantallas grandes */
+        }
+
+}
