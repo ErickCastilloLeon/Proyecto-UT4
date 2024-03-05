@@ -1,5 +1,5 @@
 No se como remplazar un archivo de github por otro que se cambio la ruta y nombre , asi que pasare la versión limpia , lo actualizo diariamente :
-https://drive.google.com/file/d/1Qbhs4HJd8IDPGGDuVQe-f0F6QGGeyPBv/view?usp=drive_link
+https://drive.google.com/file/d/1XToEkJEkS0E2juZ1S8OM63uljiFVGXS-/view?usp=drive_link
 
 
 El archivo a ejecutar deberá ser Index .
