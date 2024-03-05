@@ -7,7 +7,3 @@
     document.querySelector('.left-Loff').classList.toggle('Lon');
   });
 
-  document.querySelector('.L').addEventListener('click', function() {
-    document.querySelector('.left-Loff').classList.toggle('Lon');
-  });
-

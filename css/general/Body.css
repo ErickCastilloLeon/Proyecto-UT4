@@ -17,7 +17,6 @@ a{
         width: 50%;
         position: absolute;
         top: 10%; : 50%;
-        /* position: absolute; /* Esto significa que su posición será fija en relación con la ventana del navegador */
         left: 25%; /* Y lo colocamos justo en el borde izquierdo de la página */
 }
 

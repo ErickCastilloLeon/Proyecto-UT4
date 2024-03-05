@@ -15,7 +15,6 @@ document.getElementById('left-container').addEventListener('click', function() {
     window.location.href = 'English_Main.html';
 });
 
-// Event listener for the right container
 document.getElementById('right-container').addEventListener('mouseenter', function() {
     this.style.backgroundImage = 'url("11.png")';
     this.style.filter = 'brightness(50%)';

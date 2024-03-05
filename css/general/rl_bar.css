@@ -103,9 +103,6 @@
   #toggle:checked ~ .list-rlconainer {
     display: block;
   }
-  
-
-  /* ---------------------------------------------------  */
 
   .button-rlconainer {
     display: flex; /* Mostrar como flexbox */
@@ -159,16 +156,10 @@
     color: black; /* Cambio de color de texto al pasar el ratón */
   }
 
-  /* Mostrar la lista desplegable al pasar el ratón por encima del botón
-  .button:hover .list-rlconainer { /* Sacado de w3schools
-    display: block; /* Mostrar la lista desplegable
-  }*/
-
   #rpictures{
     align-items: center;
     width: 50%;
     padding-top: 30%;
-
   }
 
 }
