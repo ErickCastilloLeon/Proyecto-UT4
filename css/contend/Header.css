@@ -68,6 +68,3 @@ header {
 .button:hover .list-container { /* Sacado de w3schools */
     display: block; /* Mostrar la lista desplegable */
 }
-a{
-    text-decoration: none;
-}

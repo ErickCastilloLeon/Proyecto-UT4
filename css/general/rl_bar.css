@@ -94,6 +94,83 @@
     color: black;
     background-color: #eeeebe;
   }
+  /* Por defecto, ocultamos el contenedor de la lista */
+  .list-container {
+    display: none;
+  }
+
+  /* Cuando el checkbox esté mostrado , se muestra el contenedor */
+  #toggle:checked ~ .list-rlconainer {
+    display: block;
+  }
+  
+
+  /* ---------------------------------------------------  */
+
+  .button-rlconainer {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: space-around; /* Espacio uniforme entre los elementos */
+    align-items: center; /* Alinear al centro verticalmente */
+    width: 100%; /* Ancho completo */
+    max-width: calc(100% - 40px); /* Ancho máximo con un margen */
+    margin: 0 20px; /* Márgenes izquierdo y derecho */
+  }
+
+  /* Estilos para los botones */
+  .rlbutton {
+    text-align: center; /* Texto centrado */
+    position: relative; /* Posición relativa */
+    cursor: pointer; /* Cambiar cursor al pasar por encima */
+    padding: 10px; /* Relleno interno */
+    margin: 5px; /* Margen externo */
+    border: 1px solid #ccc; /* Borde sólido */
+    border-radius: 5px; /* Borde redondeado */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    background-color: #363636; /* Color de fondo */
+    width: 100%; /* Ancho completo */
+  }
+
+  /* Estilos para el contenedor de lista desplegable */
+  .list-rlconainer {
+    display: none; /* Ocultar por defecto */
+    position: absolute; /* Posición absoluta */
+    top: 100%; /* Posición desde la parte superior del botón */
+    left: 0; /* Posición desde la izquierda del botón */
+    background-color: #474747; /* Color de fondo */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Sombra */
+    z-index: 1; /* Índice de apilamiento */
+    width: 100%; /* Ancho completo */
+    animation: fadeIn 0.3s ease-in-out; /* Animación de entrada */
+  }
+
+  /* Estilos para los elementos de la lista desplegable */
+  .list-rlconainer a {
+    display: block; /* Mostrar como bloque */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    margin-bottom: 10px; /* Margen inferior */
+    width: 100%; /* Ancho completo */
+  }
+
+  /* Estilos para el estado hover de los elementos de la lista desplegable */
+  .list-rlconainer a:hover {
+    background-color: white; /* Color de fondo al pasar el ratón */
+    color: black; /* Cambio de color de texto al pasar el ratón */
+  }
+
+  /* Mostrar la lista desplegable al pasar el ratón por encima del botón
+  .button:hover .list-rlconainer { /* Sacado de w3schools
+    display: block; /* Mostrar la lista desplegable
+  }*/
+
+  #rpictures{
+    align-items: center;
+    width: 50%;
+    padding-top: 30%;
+
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
