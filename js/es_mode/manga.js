@@ -1,7 +1,7 @@
 const images = [
-    { src: "../img/Contend/Manga/01010001.webp", alt: "Jujutsu Kaisen", title: "Jujutsu Kaisen", link: "../../Contend/Manga/Chapter/Jujutsu_Kaisen.html" }, // Para que no se quede vacio
-    { src: "../img/Contend/Manga/01010002.webp", alt: "One Piece", title: "One Piece", link: "Contend/Manga/" },
-    { src: "../img/Contend/Manga/01010003.webp", alt: "Imagen 1", title: "Tensei Shitara Slime Datta Ken", link: "html2.html" },
+    { src: "../img/Contend/Manga/01010001.webp", alt: "", title: "Jujutsu Kaisen", link: "../es_mode/contend/manga/chapter/jujutsu_kaisen.html" }, // Para que no se quede vacio
+    { src: "../img/Contend/Manga/01010002.webp", alt: "", title: "One Piece", link: "Contend/Manga/" },
+    { src: "../img/Contend/Manga/01010003.webp", alt: "", title: "Tensei Shitara Slime Datta Ken", link: "html2.html" },
     { src: "../img/Contend/Manga/01010004.webp", alt: "Imagen 4", title: "Chainsaw Man", link: "html2.html" },
     { src: "../img/Contend/Manga/01010005.webp", alt: "Imagen 5", title: "Kage no Jitsuryokusha ni Naritakute", link: "html2.html" },
     { src: "../img/Contend/Manga/01010006.webp", alt: "Imagen 5", title: "Mairimashita! Iruma-kun", link: "html2.html" },
@@ -20,26 +20,18 @@ const images = [
 // El por defecto , basicamente la resolucion 1024 o más
 let columns = 1;
 let rows = 3;
-let imagesPerPage = 9; // Variable global para almacenar la cantidad de imágenes por página
+let imagesPerPage = 12; // Variable global para almacenar la cantidad de imágenes por página
 
 // Pagina a mostrarse ...practicamente el inicio
 let currentPage = 1;
-
 function adjustColumnsAndRows() { // quien diria que los if que tanto utilisaba en java me terminaria ayudando en esto
     if (window.innerWidth >= 1024) { // Pantalla grande como laptops y PC cuyas pantallas sean más grandes
-        columns = 3;
-        rows = 3;
-        imagesPerPage = 9; // 3 columnas x 3 filas = 9 imágenes
+        imagesPerPage = 12; // 3 columnas x 3 filas = 9 imágenes
     } else if (window.innerWidth >= 768) { // Pantalla mediana, como tablets por ejemplos o mini laptops
-        columns = 2;
-        rows = 3;
         imagesPerPage = 6; // 2 columnas x 3 filas = 6 imágenes
     } else { // Basicamente si no se cumple ninguno de las condiciones anteriores se ejecutará este...algo asi es 1
-        columns = 1;
-        rows = 3;
         imagesPerPage = 3; // 1 columna x 3 filas = 3 imágenes
     }
-    //
 }
 
 function showImages() {
